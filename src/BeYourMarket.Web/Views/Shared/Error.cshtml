@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class=" col-md-12">
             <i class="mdi-alert-warning text-yellow large"></i>
-            @if (String.IsNullOrEmpty(ViewBag.ErrorMessage))
+            @if (!String.IsNullOrEmpty(ViewBag.ErrorMessage))
             {
                 <h1>[[[An error occurred]]]</h1>
                 <p class="lead text-lighten">

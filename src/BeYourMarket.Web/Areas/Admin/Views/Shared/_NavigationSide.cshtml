@@ -8,23 +8,27 @@
 
 @helper DisplayGroupAttribute(string menu)
 {
-    var groupDashboard = new string[] {
+var groupDashboard = new string[] {
             "dashboard",
             "index"
         };
 
-    var groupSettings = new string[] {
+var groupSettings = new string[] {
             "settings",
             "settingsemail",
             "emailtemplates",
             "settingslanguage",
         };
 
-    var groupUsers = new string[] {
+var groupUsers = new string[] {
             "users"
         };
 
-    var groupListings = new string[] {
+var groupRoles = new string[] {
+            "roles"
+        };
+
+var groupListings = new string[] {
             "listings",
             "listingupdate",
             "listingtypes",
@@ -34,38 +38,39 @@
             "customfieldupdate"
         };
 
-    var groupDesign = new string[] {
+var groupDesign = new string[] {
             "appearance",
             "codestyle",
-            "codescript"            
+            "codescript"
         };
 
-    var groupPages = new string[] {
+var groupPages = new string[] {
             "contentpages",
             "contentpageupdate"
         };
 
-    var groupPayments = new string[] {
+var groupPayments = new string[] {
             "paymentsetting",
             "order",
             "transaction"
         };
 
-    var groupPlugins = new string[] {
+var groupPlugins = new string[] {
             "plugins"
         };
 
-    var groupDictionary = new Dictionary<string, string[]>();
-    groupDictionary.Add("dashboard", groupDashboard);
-    groupDictionary.Add("settings", groupSettings);
-    groupDictionary.Add("users", groupUsers);
-    groupDictionary.Add("listings", groupListings);
-    groupDictionary.Add("design", groupDesign);
-    groupDictionary.Add("contentpages", groupPages);
-    groupDictionary.Add("payments", groupPayments);
-    groupDictionary.Add("plugins", groupPlugins);
+var groupDictionary = new Dictionary<string, string[]>();
+groupDictionary.Add("dashboard", groupDashboard);
+groupDictionary.Add("settings", groupSettings);
+groupDictionary.Add("users", groupUsers);
+groupDictionary.Add("roles", groupRoles);
+groupDictionary.Add("listings", groupListings);
+groupDictionary.Add("design", groupDesign);
+groupDictionary.Add("contentpages", groupPages);
+groupDictionary.Add("payments", groupPayments);
+groupDictionary.Add("plugins", groupPlugins);
 
-    var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["action"].ToString().ToLowerInvariant()) ? "active" : null;
+var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["action"].ToString().ToLowerInvariant()) ? "active" : null;
 
     @attribute
 }
@@ -131,6 +136,10 @@
         <li class="has-submenu @DisplayGroupAttribute("users")">
             <a href="@Url.Action("Users", "Manage", new { area = "Admin" })"><i class="fa fa-user"></i> <span class="nav-label">[[[Manage Users]]]</span></a>            
         </li>
+
+      <li class="has-submenu @DisplayGroupAttribute("roles")">
+        <a href="@Url.Action("UserRoles", "Manage", new { area = "Admin" })"><i class="fa fa-flash"></i> <span class="nav-label">[[[Manage User Roles]]]</span></a>
+      </li>
 
         <li class="has-submenu @DisplayGroupAttribute("contentpages")">
             <a href="#"><i class="fa fa-file"></i> <span class="nav-label">[[[Pages]]]</span></a>

@@ -103,15 +103,22 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <label class="cr-styled">
-                                    <input id="RoleAdministrator" name="RoleAdministrator" type="checkbox" value="true" checked="@Model.RoleAdministrator">
-                                    <i class="fa"></i>
-                                    [[[Administrator]]]
-                                </label>
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">[[[Roles]]]</label>
+                        <div class="well col-md-10">
+                          @foreach (var role in @ViewBag.Roles)
+                          {
+                            string checkboxSelected = @Model.Roles.Any(u => u.RoleId.Contains(role.Id)) ? "checked='checked'" : "";
+                            <div class="col-md-4">
+                              <label class="cr-styled">
+                                <input id="selectedRoles" name="selectedRoles" type="checkbox" value="@role.Name" @checkboxSelected>
+                                <i class="fa"></i>
+                                [[[@role.Name]]]
+                              </label>
                             </div>
+                          }
                         </div>
+                      </div>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">[[[Register Date]]]</label>

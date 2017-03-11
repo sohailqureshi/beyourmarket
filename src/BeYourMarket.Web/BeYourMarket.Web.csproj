@@ -475,6 +475,8 @@
     <Content Include="Areas\Admin\Views\Listing\ListingTypes.cshtml" />
     <Content Include="Areas\Admin\Views\Listing\ListingTypeUpdate.cshtml" />
     <Content Include="Views\Listing\_ListingCard.cshtml" />
+    <Content Include="Areas\Admin\Views\Manage\UserRoles.cshtml" />
+    <Content Include="Areas\Admin\Views\Manage\UsersInRole.cshtml" />
     <None Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

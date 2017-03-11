@@ -103,7 +103,7 @@ namespace BeYourMarket.Web.Controllers
                 var user = await UserManager.FindByNameAsync(model.Email);                
                 if (user != null)
                 {
-                    var roleAdministrator = await RoleManager.FindByNameAsync(Enum_UserType.Administrator.ToString());
+                    var roleAdministrator = await RoleManager.FindByNameAsync(Enum_UserRole.Administrator.ToString());
                     var isAdministrator = user.Roles.Any(x => x.RoleId == roleAdministrator.Id);
 
                     // Skip email check unless it's an administrator
@@ -236,7 +236,7 @@ namespace BeYourMarket.Web.Controllers
                 // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                 // Send Message
-                var roleAdministrator = await RoleManager.FindByNameAsync(BeYourMarket.Model.Enum.Enum_UserType.Administrator.ToString());
+                var roleAdministrator = await RoleManager.FindByNameAsync(BeYourMarket.Model.Enum.Enum_UserRole.Administrator.ToString());
                 var administrator = roleAdministrator.Users.FirstOrDefault();
 
                 var message = new MessageSendModel()

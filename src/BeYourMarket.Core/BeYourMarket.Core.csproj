@@ -77,6 +77,7 @@
     <Compile Include="Controllers\IPaymentController.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\ConfigurationInstall.cs" />
     <Compile Include="Migrations\ConnectionStringHelper.cs" />
