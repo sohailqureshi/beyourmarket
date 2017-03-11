@@ -64,6 +64,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -77,6 +78,7 @@
     <Compile Include="Controllers\IPaymentController.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\CurrencyHelper.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\ConfigurationInstall.cs" />

@@ -62,7 +62,7 @@
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="Currency">[[[Currency]]]</label>
                             <div class="col-md-10">
-                                <input type="text" id="Currency" name="Currency" class="form-control" placeholder="[[[Currency]]]" value="@Model.Currency" maxlength="3" required>
+                              @Html.DropDownListFor(m => m.Currency, new SelectList(ViewBag.Currencies, "Value", "Key", Model.Currency), new { @class = "form-control" })
                             </div>
                         </div>
 

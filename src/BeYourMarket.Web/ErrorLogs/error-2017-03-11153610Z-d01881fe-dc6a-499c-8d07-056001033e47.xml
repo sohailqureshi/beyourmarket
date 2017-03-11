@@ -1,0 +1,168 @@
+﻿<error errorId="d01881fe-dc6a-499c-8d07-056001033e47" host="ACERASPIREV" type="System.Web.HttpException" message="DataBinding: 'System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' does not contain a property with the name 'Culture'." source="System.Web" detail="System.Web.HttpException (0x80004005): DataBinding: 'System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' does not contain a property with the name 'Culture'.&#xD;&#xA;   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)&#xD;&#xA;   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)&#xD;&#xA;   at System.Web.Mvc.MultiSelectList.Eval(Object container, String expression)&#xD;&#xA;   at System.Web.Mvc.MultiSelectList.&lt;&gt;c__DisplayClass2.&lt;GetListItemsWithValueField&gt;b__1(Object item)&#xD;&#xA;   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()&#xD;&#xA;   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)&#xD;&#xA;   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)&#xD;&#xA;   at System.Web.Mvc.MultiSelectList.GetEnumerator()&#xD;&#xA;   at System.Web.Mvc.Html.SelectExtensions.GetSelectListWithDefaultValue(IEnumerable`1 selectList, Object defaultValue, Boolean allowMultiple)&#xD;&#xA;   at System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)&#xD;&#xA;   at System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, IDictionary`2 htmlAttributes)&#xD;&#xA;   at System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, Object htmlAttributes)&#xD;&#xA;   at ASP._Page_Areas_Admin_Views_manage_Settings_cshtml.Execute() in c:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Areas\Admin\Views\Manage\Settings.cshtml:line 65&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.WebPages.StartPage.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)&#xD;&#xA;   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="admin@Ceesaro.com" time="2017-03-11T15:36:10.6666648Z" statusCode="500">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=J3B-TbM-Jr62KASaXy_gx6zxJJmn0Mpv_BTJYUi_EqY7gmiDCD9uZ30i02FTypIY3u-Q-U-UgzLU_QZREYb_rUKfrkkpMvs1qlxxOxei6tg1; .AspNet.ApplicationCookie=u4KgJmASAVI4GjzVto1N9czHUIHXNN656Glae_5E0Pzr3KtfJ4h3e2ag12q30su6LRN9OgXO1EVI1JMc4gHYVkhpzGLT65jy7tk0EXaMdR9ex92Bcwp02dMXhGp0Bk9HkZ3CeXpwSJ-yaLR76Cg30fkalLSayoGdmk_bktGGtGAbYNqzK2ygmU2o9XNI9m17I71l5iJ2Zu97a506AW7Yi1ejFQW9FyD7s1OP_TysBc50tBlHcd9J6zXJees6-eWghXjie4n3SdjJJBHiw9w8KaaPc5t7XhCqYKrcuppLt7AqLEKyIDKim_J_2CMr5h368ZL9yxXFfhY05SdUTlHKg2qWoV6vVJQmBNrFu897MW7o71iDTV-y2P6DUR4M-iaEWrIx7jwNGJK_uuZkx_t2M0Pmc-j5RqmsX1pntHdjhCDFH-_PhWboEXJaOziNVSZmnlNPmUDG1-ZVmSxrMG2Ugj07iGcowZHf8Bp4y-UAaVD8U0ZSlnlqvm920YEpREKqSmDjzxtEc7jDrcL804HLIw&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_REFERER:http://localhost:51583/en/admin/manage/settingslanguage&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: __RequestVerificationToken=J3B-TbM-Jr62KASaXy_gx6zxJJmn0Mpv_BTJYUi_EqY7gmiDCD9uZ30i02FTypIY3u-Q-U-UgzLU_QZREYb_rUKfrkkpMvs1qlxxOxei6tg1; .AspNet.ApplicationCookie=u4KgJmASAVI4GjzVto1N9czHUIHXNN656Glae_5E0Pzr3KtfJ4h3e2ag12q30su6LRN9OgXO1EVI1JMc4gHYVkhpzGLT65jy7tk0EXaMdR9ex92Bcwp02dMXhGp0Bk9HkZ3CeXpwSJ-yaLR76Cg30fkalLSayoGdmk_bktGGtGAbYNqzK2ygmU2o9XNI9m17I71l5iJ2Zu97a506AW7Yi1ejFQW9FyD7s1OP_TysBc50tBlHcd9J6zXJees6-eWghXjie4n3SdjJJBHiw9w8KaaPc5t7XhCqYKrcuppLt7AqLEKyIDKim_J_2CMr5h368ZL9yxXFfhY05SdUTlHKg2qWoV6vVJQmBNrFu897MW7o71iDTV-y2P6DUR4M-iaEWrIx7jwNGJK_uuZkx_t2M0Pmc-j5RqmsX1pntHdjhCDFH-_PhWboEXJaOziNVSZmnlNPmUDG1-ZVmSxrMG2Ugj07iGcowZHf8Bp4y-UAaVD8U0ZSlnlqvm920YEpREKqSmDjzxtEc7jDrcL804HLIw&#xD;&#xA;Host: localhost:51583&#xD;&#xA;Referer: http://localhost:51583/en/admin/manage/settingslanguage&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/admin/manage/settings" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\admin\manage\settings" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="57470" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/admin/manage/settings" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/admin/manage/settings" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=J3B-TbM-Jr62KASaXy_gx6zxJJmn0Mpv_BTJYUi_EqY7gmiDCD9uZ30i02FTypIY3u-Q-U-UgzLU_QZREYb_rUKfrkkpMvs1qlxxOxei6tg1; .AspNet.ApplicationCookie=u4KgJmASAVI4GjzVto1N9czHUIHXNN656Glae_5E0Pzr3KtfJ4h3e2ag12q30su6LRN9OgXO1EVI1JMc4gHYVkhpzGLT65jy7tk0EXaMdR9ex92Bcwp02dMXhGp0Bk9HkZ3CeXpwSJ-yaLR76Cg30fkalLSayoGdmk_bktGGtGAbYNqzK2ygmU2o9XNI9m17I71l5iJ2Zu97a506AW7Yi1ejFQW9FyD7s1OP_TysBc50tBlHcd9J6zXJees6-eWghXjie4n3SdjJJBHiw9w8KaaPc5t7XhCqYKrcuppLt7AqLEKyIDKim_J_2CMr5h368ZL9yxXFfhY05SdUTlHKg2qWoV6vVJQmBNrFu897MW7o71iDTV-y2P6DUR4M-iaEWrIx7jwNGJK_uuZkx_t2M0Pmc-j5RqmsX1pntHdjhCDFH-_PhWboEXJaOziNVSZmnlNPmUDG1-ZVmSxrMG2Ugj07iGcowZHf8Bp4y-UAaVD8U0ZSlnlqvm920YEpREKqSmDjzxtEc7jDrcL804HLIw" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:51583/en/admin/manage/settingslanguage" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="J3B-TbM-Jr62KASaXy_gx6zxJJmn0Mpv_BTJYUi_EqY7gmiDCD9uZ30i02FTypIY3u-Q-U-UgzLU_QZREYb_rUKfrkkpMvs1qlxxOxei6tg1" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="u4KgJmASAVI4GjzVto1N9czHUIHXNN656Glae_5E0Pzr3KtfJ4h3e2ag12q30su6LRN9OgXO1EVI1JMc4gHYVkhpzGLT65jy7tk0EXaMdR9ex92Bcwp02dMXhGp0Bk9HkZ3CeXpwSJ-yaLR76Cg30fkalLSayoGdmk_bktGGtGAbYNqzK2ygmU2o9XNI9m17I71l5iJ2Zu97a506AW7Yi1ejFQW9FyD7s1OP_TysBc50tBlHcd9J6zXJees6-eWghXjie4n3SdjJJBHiw9w8KaaPc5t7XhCqYKrcuppLt7AqLEKyIDKim_J_2CMr5h368ZL9yxXFfhY05SdUTlHKg2qWoV6vVJQmBNrFu897MW7o71iDTV-y2P6DUR4M-iaEWrIx7jwNGJK_uuZkx_t2M0Pmc-j5RqmsX1pntHdjhCDFH-_PhWboEXJaOziNVSZmnlNPmUDG1-ZVmSxrMG2Ugj07iGcowZHf8Bp4y-UAaVD8U0ZSlnlqvm920YEpREKqSmDjzxtEc7jDrcL804HLIw" />
+    </item>
+  </cookies>
+</error>

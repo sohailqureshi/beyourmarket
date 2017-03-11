@@ -34,6 +34,7 @@ using BeYourMarket.Core;
 using BeYourMarket.Core.Controllers;
 using Microsoft.Practices.Unity;
 using System.Globalization;
+using BeYourMarket.Core.Helpers;
 
 namespace BeYourMarket.Web.Areas.Admin.Controllers
 {
@@ -167,6 +168,7 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
 
     public async Task<ActionResult> UserUpdate(string id)
     {
+      ViewBag.Roles = RoleManager.Roles.OrderBy(ob => ob.Name).ToList();
       var model = new ApplicationUser();
 
       if (string.IsNullOrEmpty(id))
@@ -181,7 +183,6 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
       var roleAdministrator = await RoleManager.FindByNameAsync(Enum_UserRole.Administrator.ToString());
       model.RoleAdministrator = model.Roles.Any(x => x.RoleId == roleAdministrator.Id);
 
-      ViewBag.Roles = RoleManager.Roles.OrderBy(ob => ob.Name).ToList();
       return View(model);
     }
 
@@ -216,6 +217,8 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
     [HttpPost]
     public async Task<ActionResult> UserUpdate(ApplicationUser user, string[] selectedRoles)
     {
+      ViewBag.Roles = RoleManager.Roles.OrderBy(ob => ob.Name).ToList();
+
       // Create user if there is no user id
       var existingUser = await UserManager.FindByIdAsync(user.Id);
       if (existingUser == null)
@@ -349,6 +352,7 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
         setting.DateFormat = DateTimeFormatInfo.CurrentInfo.ShortDatePattern;
       }
 
+      ViewBag.Currencies = CurrencyHelper.Currencies.OrderBy(ob=>ob.Key);
       return View(setting);
     }
 
