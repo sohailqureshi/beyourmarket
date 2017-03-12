@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-03-12 17:29+00:00\n"
+"POT-Creation-Date: 2017-03-12 21:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Are you sure?"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:572
+#: Areas\Admin\Controllers\ManageController.cs:574
 msgid "At least one language should be enabled!"
 msgstr ""
 
@@ -180,7 +180,7 @@ msgstr ""
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:196
 #: Areas\Admin\Views\Manage\EmailTemplateUpdate.cshtml:64
 #: Areas\Admin\Views\Manage\Settings.cshtml:167
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:69
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:88
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:43
 #: Areas\Admin\Views\Manage\UsersInRole.cshtml:44
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:158
@@ -265,6 +265,7 @@ msgstr ""
 
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.Disqus\Views\Index.cshtml:6
 #: Plugins\Plugin.Widget.Disqus\Views\Index.cshtml:6
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.Disqus\bin\Views\Index.cshtml:6
 msgid "Comments"
 msgstr ""
 
@@ -471,7 +472,7 @@ msgstr ""
 msgid "Default Language"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:579
+#: Areas\Admin\Controllers\ManageController.cs:581
 msgid "Default language must be enabled first!"
 msgstr ""
 
@@ -485,6 +486,10 @@ msgstr ""
 
 #: Views\Manage\Dashboard.cshtml:82
 msgid "Deleted!"
+msgstr ""
+
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:25
+msgid "Delivery Method"
 msgstr ""
 
 #: Views\Listing\Listing.cshtml:55
@@ -577,7 +582,7 @@ msgstr ""
 msgid "Email Confirmed"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:25
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:43
 msgid "Email display name"
 msgstr ""
 
@@ -585,8 +590,8 @@ msgstr ""
 msgid "Email Link"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:4
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:12
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:3
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:11
 #: Areas\Admin\Views\Shared\_NavigationSide.cshtml:109
 msgid "Email Settings"
 msgstr ""
@@ -795,7 +800,7 @@ msgstr ""
 msgid "Hi, Welcome to {0}! I am happy to assist you if you has any questions."
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:32
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:50
 msgid "Host"
 msgstr ""
 
@@ -1062,7 +1067,7 @@ msgstr ""
 msgid "Message sent succesfully!"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:464
+#: Areas\Admin\Controllers\ManageController.cs:466
 msgid "Message sent to {0} succesfully!"
 msgstr ""
 
@@ -1195,6 +1200,7 @@ msgstr ""
 
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:21
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:21
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:21
 msgid "Paid"
 msgstr ""
 
@@ -1245,6 +1251,7 @@ msgstr ""
 #: Views\Payment\Orders.cshtml:45
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:25
 #: Areas\Admin\Views\Payment\Order.cshtml:40
 msgid "Pending"
 msgstr ""
@@ -1261,6 +1268,10 @@ msgstr ""
 #: Areas\Admin\Views\Manage\Users.cshtml:42
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:91
 msgid "Phone Number Confirmed"
+msgstr ""
+
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:33
+msgid "Pickup Directory"
 msgstr ""
 
 #: Views\Listing\_ListingGridList.cshtml:32
@@ -1300,7 +1311,7 @@ msgstr ""
 msgid "Plugins"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:39
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:57
 msgid "Port"
 msgstr ""
 
@@ -1463,7 +1474,7 @@ msgstr ""
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:195
 #: Areas\Admin\Views\Manage\EmailTemplateUpdate.cshtml:63
 #: Areas\Admin\Views\Manage\Settings.cshtml:166
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:68
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:87
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:42
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:157
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:45
@@ -1600,15 +1611,15 @@ msgstr ""
 msgid "Slug {0} already exists"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:53
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:71
 msgid "SMTP Password"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:46
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:64
 msgid "SMTP User"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:60
+#: Areas\Admin\Views\Manage\SettingsEmail.cshtml:78
 msgid "SSL enabled"
 msgstr ""
 
@@ -1643,7 +1654,7 @@ msgstr ""
 msgid "Test Send"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:459
+#: Areas\Admin\Controllers\ManageController.cs:461
 msgid "Testing"
 msgstr ""
 
@@ -1718,6 +1729,9 @@ msgstr ""
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:40
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:63
 #: Plugins\Plugin.Payment.Stripe\Views\TransactionOverview.cshtml:31
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:40
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:63
+#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\TransactionOverview.cshtml:31
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:36
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:54
 #: Areas\Admin\Views\Listing\Listings.cshtml:52

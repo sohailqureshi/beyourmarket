@@ -318,6 +318,8 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
     {
       var settingExisting = _settingService.Queryable().FirstOrDefault();
 
+      settingExisting.SmtpDeliveryMethod = setting.SmtpDeliveryMethod;
+      settingExisting.PickupDirectoryLocation = setting.PickupDirectoryLocation;
       settingExisting.SmtpHost = setting.SmtpHost;
       settingExisting.SmtpPassword = setting.SmtpPassword;
       settingExisting.SmtpPort = setting.SmtpPort;

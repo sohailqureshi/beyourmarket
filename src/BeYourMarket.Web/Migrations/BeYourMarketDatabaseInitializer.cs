@@ -125,10 +125,12 @@ namespace BeYourMarket.Web.Migrations
         {
           ID = 1,
           Name = "BeYourMarket",
-          Description = "Find the beauty and spa service providers in your neighborhood!",
+          Description = "Find the beauty and spa service providers in your neighbourhood!",
           Slogan = "BeYourMarket - Spa Demo",
           SearchPlaceHolder = "Search your Spa...",
           EmailContact = "hello@beyourmarket.com",
+          EmailAddress = "support@beyourmarket.com",
+          EmailDisplayName="Support",
           Version = "1.0",
           Currency = "DKK",
           TransactionFeePercent = 1,

@@ -1,5 +1,4 @@
 ﻿@model BeYourMarket.Model.Models.Setting
-
 @{
     ViewBag.Title = "[[[Email Settings]]]";
 }
@@ -14,12 +13,31 @@
                     <input type="hidden" name="ID" id="ID" value="@Model.ID" />
 
                     <form autocomplete="off" action="@Url.Action("SettingsEmailUpdate", "Manage")" id="settingsForm" method="post" class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">[[[Email Address]]]</label>
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" value="@Model.EmailAddress">
-                            </div>
+                      
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">[[[Email Address]]]</label>
+                        <div class="col-md-10">
+                          <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" value="@Model.EmailAddress">
                         </div>
+                      </div>                      
+                      
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">[[[Delivery Method]]]</label>
+                        <div class="col-md-10">
+                          @Html.EnumDropDownListFor(m => m.SmtpDeliveryMethod, new { @class = "form-control" })
+                        </div>
+                      </div>
+
+                      <div id="pickupDirectoryInfo" style="display: none;">
+                        <div class="form-group">
+                          <label class="col-md-2 control-label">[[[Pickup Directory]]]</label>
+                          <div class="col-md-10">
+                            <input type="text" class="form-control" id="PickupDirectoryLocation" name="PickupDirectoryLocation" value="@Model.PickupDirectoryLocation">
+                          </div>
+                        </div>
+                       </div>
+
+                      <div id="smtpInfo">
 
                         <div class="form-group">
                             <label class="col-md-2 control-label">[[[Email display name]]]</label>
@@ -63,12 +81,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> [[[Save]]]</button>
-                                <a href="@Url.Action("SettingsEmail", "Manage")" class="btn btn-default"><i class="fa fa-remove"></i> [[[Cancel]]]</a>
-                            </div>
-                        </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-10">
+                              <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> [[[Save]]]</button>
+                              <a href="@Url.Action("SettingsEmail", "Manage")" class="btn btn-default"><i class="fa fa-remove"></i> [[[Cancel]]]</a>
+                          </div>
+                      </div>
 
                     </form>
                 </div>
@@ -78,6 +97,28 @@
 
 </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+@section Scripts
+{
+  @Scripts.Render("~/bundles/jqueryval")
+
+  <script>
+    $(document).ready(function () {
+      $('#SmtpDeliveryMethod').on('change', function () {
+        if (this.value == '0') {
+          $("#pickupDirectoryInfo").hide();
+          $("#smtpInfo").show();
+        }
+        else if (this.value == '1') {
+          $("#pickupDirectoryInfo").show();
+          $("#smtpInfo").hide();
+        }
+        else {
+          $("#pickupDirectoryInfo").show();
+          $("#smtpInfo").show();
+        }
+      });
+
+      $('#SmtpDeliveryMethod').trigger("change");
+    })
+  </script>
 }

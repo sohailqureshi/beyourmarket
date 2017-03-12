@@ -1,0 +1,173 @@
+﻿<error errorId="a4cac792-5897-49e6-8710-5bc40e4cd726" host="ACERASPIREV" type="System.Web.HttpException" message="A potentially dangerous Request.Path value was detected from the client (:)." source="System.Web" detail="System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).&#xD;&#xA;   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()&#xD;&#xA;   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)" time="2017-03-12T21:10:31.0237795Z" statusCode="400">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/css,*/*;q=0.1&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=8_FmDiGjTnxQuqzOtj0WKz-0apD0_3xyJDuF27uy7951RvgrdwkNqAvRoUa57leBJDJg_cho0z8n0Elq_YuKe4-w4BNPKD_3kW84TIu7MMtxWp2py2KQfq69L7ffLW48KxOmCr4o3MPYtvDH6TxWUNHmFO1tjDmApcYSK4ceMnbGIIHjXiiKaML35au3EsQCpPuvWB7QKjzBknVHef9Dr8qOBk03mYJgXR5l7_HgLjmYeVQwSFkEpUltcUQVE0y_6ttLT5bA0MKyhTAZNzWSCkQz8xTC-SuJDquGCf1bMS_wRefgGXZ3pVM9YbGOMHiCTjUNOZA-Ot85kFAfnbOYkWjMZyRlziA6e83ttRcPZ0hfFMhG1A3ml7MnIn7g4myFfY7hBvlwsLk1iIxO0G-zRRqUZ73qmCbYjs3kzsEQuhC701gpNag-Fkk4b8qPqW4siVGUwQyWDFvE2QplgfQfbne10bRFzkdH4iiXFDWhZSdRugMZ15AZXVBMSy-FsKRZkKuVf133XTbLSsuE9-UTmQ&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_REFERER:http://localhost:51583/en/admin/manage/emailtemplateupdate/2&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/css,*/*;q=0.1&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: __RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=8_FmDiGjTnxQuqzOtj0WKz-0apD0_3xyJDuF27uy7951RvgrdwkNqAvRoUa57leBJDJg_cho0z8n0Elq_YuKe4-w4BNPKD_3kW84TIu7MMtxWp2py2KQfq69L7ffLW48KxOmCr4o3MPYtvDH6TxWUNHmFO1tjDmApcYSK4ceMnbGIIHjXiiKaML35au3EsQCpPuvWB7QKjzBknVHef9Dr8qOBk03mYJgXR5l7_HgLjmYeVQwSFkEpUltcUQVE0y_6ttLT5bA0MKyhTAZNzWSCkQz8xTC-SuJDquGCf1bMS_wRefgGXZ3pVM9YbGOMHiCTjUNOZA-Ot85kFAfnbOYkWjMZyRlziA6e83ttRcPZ0hfFMhG1A3ml7MnIn7g4myFfY7hBvlwsLk1iIxO0G-zRRqUZ73qmCbYjs3kzsEQuhC701gpNag-Fkk4b8qPqW4siVGUwQyWDFvE2QplgfQfbne10bRFzkdH4iiXFDWhZSdRugMZ15AZXVBMSy-FsKRZkKuVf133XTbLSsuE9-UTmQ&#xD;&#xA;Host: localhost:51583&#xD;&#xA;Referer: http://localhost:51583/en/admin/manage/emailtemplateupdate/2&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/en/http:/localhost:51583/scripts/ckeditor/contents.css" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\en\http:\localhost:51583\scripts\ckeditor\contents.css" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="t=F0RD" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="57885" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/en/http:/localhost:51583/scripts/ckeditor/contents.css" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/en/http:/localhost:51583/scripts/ckeditor/contents.css" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/css,*/*;q=0.1" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=8_FmDiGjTnxQuqzOtj0WKz-0apD0_3xyJDuF27uy7951RvgrdwkNqAvRoUa57leBJDJg_cho0z8n0Elq_YuKe4-w4BNPKD_3kW84TIu7MMtxWp2py2KQfq69L7ffLW48KxOmCr4o3MPYtvDH6TxWUNHmFO1tjDmApcYSK4ceMnbGIIHjXiiKaML35au3EsQCpPuvWB7QKjzBknVHef9Dr8qOBk03mYJgXR5l7_HgLjmYeVQwSFkEpUltcUQVE0y_6ttLT5bA0MKyhTAZNzWSCkQz8xTC-SuJDquGCf1bMS_wRefgGXZ3pVM9YbGOMHiCTjUNOZA-Ot85kFAfnbOYkWjMZyRlziA6e83ttRcPZ0hfFMhG1A3ml7MnIn7g4myFfY7hBvlwsLk1iIxO0G-zRRqUZ73qmCbYjs3kzsEQuhC701gpNag-Fkk4b8qPqW4siVGUwQyWDFvE2QplgfQfbne10bRFzkdH4iiXFDWhZSdRugMZ15AZXVBMSy-FsKRZkKuVf133XTbLSsuE9-UTmQ" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:51583/en/admin/manage/emailtemplateupdate/2" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="t">
+      <value string="F0RD" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="hltbl3lk0ut5wrc3xddhlbdr" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="8_FmDiGjTnxQuqzOtj0WKz-0apD0_3xyJDuF27uy7951RvgrdwkNqAvRoUa57leBJDJg_cho0z8n0Elq_YuKe4-w4BNPKD_3kW84TIu7MMtxWp2py2KQfq69L7ffLW48KxOmCr4o3MPYtvDH6TxWUNHmFO1tjDmApcYSK4ceMnbGIIHjXiiKaML35au3EsQCpPuvWB7QKjzBknVHef9Dr8qOBk03mYJgXR5l7_HgLjmYeVQwSFkEpUltcUQVE0y_6ttLT5bA0MKyhTAZNzWSCkQz8xTC-SuJDquGCf1bMS_wRefgGXZ3pVM9YbGOMHiCTjUNOZA-Ot85kFAfnbOYkWjMZyRlziA6e83ttRcPZ0hfFMhG1A3ml7MnIn7g4myFfY7hBvlwsLk1iIxO0G-zRRqUZ73qmCbYjs3kzsEQuhC701gpNag-Fkk4b8qPqW4siVGUwQyWDFvE2QplgfQfbne10bRFzkdH4iiXFDWhZSdRugMZ15AZXVBMSy-FsKRZkKuVf133XTbLSsuE9-UTmQ" />
+    </item>
+  </cookies>
+</error>
