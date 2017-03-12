@@ -68,6 +68,7 @@
     <Compile Include="CacheKeys.cs" />
     <Compile Include="CategoryListingTypeService.cs" />
     <Compile Include="CategoryStatService.cs" />
+    <Compile Include="ContentPageRoleService.cs" />
     <Compile Include="EmailTemplateService.cs" />
     <Compile Include="CustomFieldCategoryService.cs" />
     <Compile Include="CustomFieldListingService.cs" />

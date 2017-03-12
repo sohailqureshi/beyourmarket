@@ -32,25 +32,22 @@
                     <hr />
 
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            @Html.Grid(Model.Grid).SetLanguage(Context.GetPrincipalAppLanguageForRequest().ToString()).EmptyText("[[[There are no items to display.]]]").Columns(columns =>
-                       {
-                           columns.Add()
-                             .Encoded(false)
-                             .Sanitized(false)
-                             .RenderValueAs(x => DisplayUpdateLink(x.ID));
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      @Html.Grid(Model.Grid).SetLanguage(Context.GetPrincipalAppLanguageForRequest().ToString()).EmptyText("[[[There are no items to display.]]]").Columns(columns =>
+                      {
+                       columns.Add()
+                         .Encoded(false)
+                         .Sanitized(false)
+                         .RenderValueAs(x => DisplayUpdateLink(x.ID));
 
-                           columns.Add(x => x.ID);
-                           columns.Add(x => x.Slug).Titled("[[[Slug]]]");
-                           columns.Add(x => x.Title).Titled("[[[Title]]]");
-                           columns.Add(x => x.Description).Titled("[[[Description]]]");
-                           columns.Add(x => x.Author).Titled("[[[Author]]]");
-                           columns.Add(x => x.Published).Titled("[[[Published]]]");
-                           columns.Add(x => x.Created).RenderValueAs(x => x.Created.ToShortDateString()).Titled("[[[Created]]]");
-                           columns.Add(x => x.LastUpdated).RenderValueAs(x => x.LastUpdated.ToShortDateString()).Titled("[[[Last Updated]]]");
+                       columns.Add(x => x.Title).Titled("[[[Title]]]");
+                       columns.Add(x => x.Slug).Titled("[[[Slug]]]");
+                       columns.Add(x => x.Published).Titled("[[[Published]]]");
+                       columns.Add(x => x.Created).RenderValueAs(x => x.Created.ToShortDateString()).Titled("[[[Created]]]");
+                       columns.Add(x => x.LastUpdated).RenderValueAs(x => x.LastUpdated.ToShortDateString()).Titled("[[[Last Updated]]]");
 
 
-                       }).Sortable().Filterable().WithPaging(10).Selectable(false)
+                     }).Sortable().Filterable().WithPaging(10).Selectable(false)
                         </div>
                     </div>
 

@@ -75,6 +75,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CategoryListingType.cs" />
     <Compile Include="Models\CategoryStat.cs" />
+    <Compile Include="Models\ContentPageRole.cs" />
     <Compile Include="Models\ContentPage.cs" />
     <Compile Include="Models\EmailTemplate.cs" />
     <Compile Include="Models\Listing.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Models\Mapping\CategoryListingTypeMap.cs" />
     <Compile Include="Models\Mapping\CategoryMap.cs" />
     <Compile Include="Models\Mapping\CategoryStatMap.cs" />
+    <Compile Include="Models\Mapping\ContentPageRoleMap.cs" />
     <Compile Include="Models\Mapping\ContentPageMap.cs" />
     <Compile Include="Models\Mapping\EmailTemplateMap.cs" />
     <Compile Include="Models\Mapping\ListingMap.cs" />

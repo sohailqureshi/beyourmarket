@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-03-11 15:42+00:00\n"
+"POT-Creation-Date: 2017-03-12 15:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,8 @@ msgstr ""
 msgid "\", \"(((\").Replace(\""
 msgstr ""
 
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:116
+#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:69
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:118
 msgid "@role.Name"
 msgstr ""
 
@@ -73,16 +74,12 @@ msgstr ""
 msgid "Add New"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:148
-msgid "Add new page"
-msgstr ""
-
 #: Views\Shared\_DashBoardSide.cshtml:25
 msgid "Admin"
 msgstr ""
 
 #: Views\Shared\_LoginPartial.cshtml:68
-#: Views\Shared\_NavigationSide.cshtml:92
+#: Views\Shared\_NavigationSide.cshtml:93
 msgid "Admin Panel"
 msgstr ""
 
@@ -107,7 +104,7 @@ msgid "Agreement Text"
 msgstr ""
 
 #: Views\Listing\Listings.cshtml:51
-#: Views\Shared\_NavigationSide.cshtml:25
+#: Views\Shared\_NavigationSide.cshtml:26
 msgid "All Categories"
 msgstr ""
 
@@ -129,7 +126,7 @@ msgstr ""
 
 #: Areas\Admin\Views\Design\Appearance.cshtml:4
 #: Areas\Admin\Views\Design\Appearance.cshtml:17
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:97
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:96
 msgid "Appearance"
 msgstr ""
 
@@ -147,11 +144,10 @@ msgstr ""
 msgid "Are you sure?"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:570
+#: Areas\Admin\Controllers\ManageController.cs:572
 msgid "At least one language should be enabled!"
 msgstr ""
 
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:47
 #: Areas\Admin\Views\Plugin\Plugins.cshtml:52
 msgid "Author"
 msgstr ""
@@ -173,7 +169,7 @@ msgstr ""
 #: Views\Listing\Review.cshtml:74
 #: Views\Payment\Orders.cshtml:26
 #: Views\Payment\Orders.cshtml:30
-#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:77
+#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:99
 #: Areas\Admin\Views\Design\Appearance.cshtml:45
 #: Areas\Admin\Views\Design\CodeScript.cshtml:35
 #: Areas\Admin\Views\Design\CodeStyle.cshtml:35
@@ -187,7 +183,7 @@ msgstr ""
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:69
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:43
 #: Areas\Admin\Views\Manage\UsersInRole.cshtml:44
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:154
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:158
 #: Areas\Admin\Views\Payment\Order.cshtml:25
 #: Areas\Admin\Views\Payment\Order.cshtml:29
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:46
@@ -207,7 +203,7 @@ msgstr ""
 msgid "Cancelled!"
 msgstr ""
 
-#: Views\Shared\_NavigationSide.cshtml:98
+#: Views\Shared\_NavigationSide.cshtml:99
 #: Areas\Admin\Views\Listing\Categories.cshtml:8
 #: Areas\Admin\Views\Listing\Categories.cshtml:37
 msgid "Categories"
@@ -269,7 +265,6 @@ msgstr ""
 
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.Disqus\Views\Index.cshtml:6
 #: Plugins\Plugin.Widget.Disqus\Views\Index.cshtml:6
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.Disqus\bin\Views\Index.cshtml:6
 msgid "Comments"
 msgstr ""
 
@@ -352,7 +347,7 @@ msgid "Contact number (Double click to show)"
 msgstr ""
 
 #: Views\Home\Contact.cshtml:16
-#: Views\Shared\_NavigationSide.cshtml:111
+#: Views\Shared\_NavigationSide.cshtml:112
 msgid "Contact us"
 msgstr ""
 
@@ -363,6 +358,7 @@ msgstr ""
 
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:10
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:23
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:144
 msgid "Content Pages"
 msgstr ""
 
@@ -380,7 +376,7 @@ msgstr ""
 
 #: Views\Account\Register.cshtml:12
 #: Views\Shared\_LoginPartial.cshtml:82
-#: Views\Shared\_NavigationSide.cshtml:65
+#: Views\Shared\_NavigationSide.cshtml:66
 msgid "Create an account"
 msgstr ""
 
@@ -390,7 +386,7 @@ msgstr ""
 
 #: Views\Listing\_ListingGridList.cshtml:44
 #: Views\Payment\Orders.cshtml:132
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:49
+#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:46
 #: Areas\Admin\Views\Listing\Listings.cshtml:71
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:115
 #: Areas\Admin\Views\Manage\EmailTemplates.cshtml:39
@@ -412,7 +408,7 @@ msgstr ""
 msgid "Current password"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:98
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:97
 msgid "Custom CSS"
 msgstr ""
 
@@ -423,19 +419,19 @@ msgstr ""
 
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:35
 #: Areas\Admin\Views\Shared\_CategoryCustomFields.cshtml:6
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:90
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:89
 msgid "Custom Fields"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:99
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:98
 msgid "Custom Javascript"
 msgstr ""
 
 #: Views\Manage\Dashboard.cshtml:4
 #: Views\Shared\_LoginPartial.cshtml:62
-#: Views\Shared\_NavigationSide.cshtml:78
+#: Views\Shared\_NavigationSide.cshtml:79
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:3
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:81
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:80
 msgid "Dashboard"
 msgstr ""
 
@@ -475,7 +471,7 @@ msgstr ""
 msgid "Default Language"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:577
+#: Areas\Admin\Controllers\ManageController.cs:579
 msgid "Default language must be enabled first!"
 msgstr ""
 
@@ -495,7 +491,6 @@ msgstr ""
 #: Views\Listing\ListingUpdate.cshtml:48
 #: Views\Listing\_ListingGridList.cshtml:40
 #: Views\Payment\Orders.cshtml:128
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:46
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:37
 #: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:26
 #: Areas\Admin\Views\Listing\Listings.cshtml:69
@@ -510,7 +505,7 @@ msgstr ""
 msgid "Description..."
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:95
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:94
 msgid "Design"
 msgstr ""
 
@@ -592,7 +587,7 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:4
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:12
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:110
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:109
 msgid "Email Settings"
 msgstr ""
 
@@ -603,7 +598,7 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\EmailTemplates.cshtml:10
 #: Areas\Admin\Views\Manage\EmailTemplates.cshtml:23
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:113
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:112
 msgid "Email Templates"
 msgstr ""
 
@@ -752,7 +747,7 @@ msgstr ""
 msgid "Full Name"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:107
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:106
 msgid "General Settings"
 msgstr ""
 
@@ -764,7 +759,7 @@ msgstr ""
 msgid "Group"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:166
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:152
 msgid "Guide"
 msgstr ""
 
@@ -862,16 +857,16 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:4
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:11
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:116
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:115
 msgid "Language Settings"
 msgstr ""
 
 #: Areas\Admin\Views\Manage\UsersInRole.cshtml:27
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:138
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:142
 msgid "Last Access Date"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:145
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:149
 msgid "Last Access IP"
 msgstr ""
 
@@ -881,7 +876,7 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:50
+#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:47
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:122
 #: Areas\Admin\Views\Manage\EmailTemplates.cshtml:40
 msgid "Last Updated"
@@ -953,7 +948,7 @@ msgstr ""
 #: Areas\Admin\Views\Listing\Listings.cshtml:33
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:17
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:76
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:85
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:84
 msgid "Listings"
 msgstr ""
 
@@ -981,7 +976,7 @@ msgid "Locked Out."
 msgstr ""
 
 #: Views\Shared\_LoginPartial.cshtml:85
-#: Views\Shared\_NavigationSide.cshtml:60
+#: Views\Shared\_NavigationSide.cshtml:61
 msgid "Log in"
 msgstr ""
 
@@ -1026,32 +1021,16 @@ msgstr ""
 msgid "Manage"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:87
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:86
 msgid "Manage Categories"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:88
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:87
 msgid "Manage Listing Types"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:89
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:88
 msgid "Manage Listings"
-msgstr ""
-
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:151
-msgid "Manage Pages"
-msgstr ""
-
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:160
-msgid "Manage Plugins"
-msgstr ""
-
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:141
-msgid "Manage User Roles"
-msgstr ""
-
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:137
-msgid "Manage Users"
 msgstr ""
 
 #: Views\Listing\Listing.cshtml:216
@@ -1083,7 +1062,7 @@ msgstr ""
 msgid "Message sent succesfully!"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:462
+#: Areas\Admin\Controllers\ManageController.cs:464
 msgid "Message sent to {0} succesfully!"
 msgstr ""
 
@@ -1202,7 +1181,7 @@ msgstr ""
 #: Areas\Admin\Views\Payment\Order.cshtml:7
 #: Areas\Admin\Views\Payment\Order.cshtml:65
 #: Areas\Admin\Views\Payment\Order.cshtml:77
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:125
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:124
 msgid "Orders"
 msgstr ""
 
@@ -1214,13 +1193,8 @@ msgstr ""
 msgid "Page {0} of {1}"
 msgstr ""
 
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:145
-msgid "Pages"
-msgstr ""
-
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:21
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:21
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:21
 msgid "Paid"
 msgstr ""
 
@@ -1254,12 +1228,12 @@ msgstr ""
 #: Views\Payment\PaymentSetting.cshtml:21
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:3
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:13
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:131
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:130
 msgid "Payment Settings"
 msgstr ""
 
 #: Views\Shared\_DashBoardSide.cshtml:16
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:122
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:121
 msgid "Payments"
 msgstr ""
 
@@ -1271,7 +1245,6 @@ msgstr ""
 #: Views\Payment\Orders.cshtml:45
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:25
 #: Areas\Admin\Views\Payment\Order.cshtml:40
 msgid "Pending"
 msgstr ""
@@ -1323,7 +1296,7 @@ msgstr ""
 
 #: Areas\Admin\Views\Plugin\Plugins.cshtml:10
 #: Areas\Admin\Views\Plugin\Plugins.cshtml:64
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:157
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:148
 msgid "Plugins"
 msgstr ""
 
@@ -1387,13 +1360,13 @@ msgstr ""
 #: Views\Manage\Dashboard.cshtml:28
 #: Views\Shared\_Layout.cshtml:74
 #: Views\Shared\_LoginPartial.cshtml:63
-#: Views\Shared\_NavigationSide.cshtml:70
-#: Views\Shared\_NavigationSide.cshtml:84
+#: Views\Shared\_NavigationSide.cshtml:71
+#: Views\Shared\_NavigationSide.cshtml:85
 msgid "Publish new listing"
 msgstr ""
 
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:48
-#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:62
+#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:45
+#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:84
 msgid "Published"
 msgstr ""
 
@@ -1422,11 +1395,11 @@ msgstr ""
 msgid "Register as a new user"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:124
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:128
 msgid "Register Date"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:131
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:135
 msgid "Register IP"
 msgstr ""
 
@@ -1474,13 +1447,12 @@ msgstr ""
 msgid "Reviews"
 msgstr ""
 
-#: Areas\Admin\Views\Manage\UserRoles.cshtml:14
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:107
-msgid "Roles"
+#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:58
+msgid "Roles With Access"
 msgstr ""
 
 #: Views\Manage\UserProfile.cshtml:81
-#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:76
+#: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:98
 #: Areas\Admin\Views\Design\Appearance.cshtml:44
 #: Areas\Admin\Views\Design\CodeScript.cshtml:34
 #: Areas\Admin\Views\Design\CodeStyle.cshtml:34
@@ -1493,7 +1465,7 @@ msgstr ""
 #: Areas\Admin\Views\Manage\Settings.cshtml:166
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:68
 #: Areas\Admin\Views\Manage\SettingsLanguage.cshtml:42
-#: Areas\Admin\Views\Manage\UserUpdate.cshtml:153
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:157
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:45
 msgid "Save"
 msgstr ""
@@ -1570,7 +1542,7 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\Settings.cshtml:4
 #: Areas\Admin\Views\Manage\Settings.cshtml:12
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:104
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:103
 msgid "Settings"
 msgstr ""
 
@@ -1624,7 +1596,7 @@ msgstr ""
 msgid "Slug"
 msgstr ""
 
-#: Areas\Admin\Controllers\ContentPageController.cs:182
+#: Areas\Admin\Controllers\ContentPageController.cs:192
 msgid "Slug {0} already exists"
 msgstr ""
 
@@ -1671,7 +1643,7 @@ msgstr ""
 msgid "Test Send"
 msgstr ""
 
-#: Areas\Admin\Controllers\ManageController.cs:457
+#: Areas\Admin\Controllers\ManageController.cs:459
 msgid "Testing"
 msgstr ""
 
@@ -1746,9 +1718,6 @@ msgstr ""
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:40
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:63
 #: Plugins\Plugin.Payment.Stripe\Views\TransactionOverview.cshtml:31
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:40
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:63
-#: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\TransactionOverview.cshtml:31
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:36
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:54
 #: Areas\Admin\Views\Listing\Listings.cshtml:52
@@ -1801,7 +1770,7 @@ msgstr ""
 #: Views\Listing\ListingUpdate.cshtml:43
 #: Views\Listing\_ListingGridList.cshtml:38
 #: Views\Payment\Orders.cshtml:123
-#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:45
+#: Areas\Admin\Views\ContentPage\ContentPages.cshtml:43
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:30
 #: Areas\Admin\Views\Listing\Listings.cshtml:68
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:42
@@ -1846,7 +1815,7 @@ msgstr ""
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:37
 #: Areas\Admin\Views\Payment\Transaction.cshtml:2
 #: Areas\Admin\Views\Payment\Transaction.cshtml:14
-#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:128
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:127
 msgid "Transactions"
 msgstr ""
 
@@ -1899,12 +1868,21 @@ msgstr ""
 msgid "User {0} is deleted."
 msgstr ""
 
+#: Areas\Admin\Views\Manage\UserUpdate.cshtml:107
+msgid "User Has Roles"
+msgstr ""
+
 #: Areas\Admin\Views\Install\Index.cshtml:25
 msgid "User information"
 msgstr ""
 
 #: Areas\Admin\Views\Manage\Users.cshtml:99
 msgid "User is deleted."
+msgstr ""
+
+#: Areas\Admin\Views\Manage\UserRoles.cshtml:14
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:140
+msgid "User Roles"
 msgstr ""
 
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:4
@@ -1920,6 +1898,7 @@ msgstr ""
 #: Areas\Admin\Views\Manage\Users.cshtml:7
 #: Areas\Admin\Views\Manage\Users.cshtml:20
 #: Areas\Admin\Views\Manage\UsersInRole.cshtml:7
+#: Areas\Admin\Views\Shared\_NavigationSide.cshtml:136
 msgid "Users"
 msgstr ""
 

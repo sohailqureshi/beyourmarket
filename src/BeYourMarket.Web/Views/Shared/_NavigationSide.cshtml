@@ -1,6 +1,7 @@
 ﻿@model BeYourMarket.Web.Models.NavigationSideModel
+@using BeYourMarket.Model.Enum
 @{
-    Layout = null;
+  Layout = null;
 }
 
 @helper DisplayTree(IEnumerable<BeYourMarket.Web.Extensions.TreeItem<BeYourMarket.Model.Models.Category>> categories, bool child = false)
@@ -85,7 +86,7 @@
                 </a>
             </li>
 
-                if (User.IsInRole("Administrator"))
+                if (User.IsInRole(Enum_UserRole.Administrator.ToString()))
                 {
                 <li>
                     <a target="_blank" href="@Url.Action("Index", "Manage", new {Area ="Admin" })">
@@ -101,15 +102,16 @@
 
         <li class="divider"></li>
         @foreach (var contentPage in Model.ContentPages)
-            {
-            <li class="@(Html.IsActiveMenuItem("ContentPage", "Home", contentPage.Slug) ? "active" : "")">
-                <a href="@Url.Action("ContentPage", "Home", new { id = contentPage.Slug })"><i class="fa fa-file"></i> @contentPage.Title</a>
-            </li>
-            }
+        {
+          <li class="@(Html.IsActiveMenuItem("ContentPage", "Home", contentPage.Slug) ? "active" : "")">
+            <a href="@Url.Action("ContentPage", "Home", new { id = contentPage.Slug })"><i class="fa fa-file"></i> @contentPage.Title</a>
+          </li>
+        }
 
         <li class="@(Html.IsActiveMenuItem("Contact","Home") ? "active" : "")">
             <a href="@Url.Action("Contact", "Home")"><i class="fa fa-envelope"></i> [[[Contact us]]]</a>
         </li>
+
         <li>
             <footer class="copyright">
                 &copy; @DateTime.Now.Year - <a href="http://beyourmarket.com">BeYourMarket.com</a>

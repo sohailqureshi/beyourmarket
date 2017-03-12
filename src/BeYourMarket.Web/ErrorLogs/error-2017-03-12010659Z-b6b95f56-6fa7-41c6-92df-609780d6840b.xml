@@ -1,0 +1,168 @@
+﻿<error errorId="b6b95f56-6fa7-41c6-92df-609780d6840b" host="ACERASPIREV" type="System.InvalidOperationException" message="The current type, BeYourMarket.Service.IContentPageRoleService, is an interface and cannot be constructed. Are you missing a type mapping?" source="Microsoft.Practices.Unity" detail="System.InvalidOperationException: An error occurred when trying to create a controller of type 'BeYourMarket.Web.Areas.Admin.Controllers.ContentPageController'. Make sure that the controller has a parameterless public constructor. ---&gt; Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = &quot;BeYourMarket.Web.Areas.Admin.Controllers.ContentPageController&quot;, name = &quot;(none)&quot;.&#xD;&#xA;Exception occurred while: while resolving.&#xD;&#xA;Exception is: InvalidOperationException - The current type, BeYourMarket.Service.IContentPageRoleService, is an interface and cannot be constructed. Are you missing a type mapping?&#xD;&#xA;-----------------------------------------------&#xD;&#xA;At the time of the exception, the container was:&#xD;&#xA;&#xD;&#xA;  Resolving BeYourMarket.Web.Areas.Admin.Controllers.ContentPageController,(none)&#xD;&#xA;  Resolving parameter &quot;contentPageRoleService&quot; of constructor BeYourMarket.Web.Areas.Admin.Controllers.ContentPageController(Repository.Pattern.UnitOfWork.IUnitOfWorkAsync unitOfWorkAsync, BeYourMarket.Service.ISettingService settingService, BeYourMarket.Service.ICategoryService categoryService, BeYourMarket.Service.IListingService listingService, BeYourMarket.Service.ICustomFieldService customFieldService, BeYourMarket.Service.ICustomFieldCategoryService customFieldCategoryService, BeYourMarket.Service.IContentPageService contentPageService, BeYourMarket.Service.IContentPageRoleService contentPageRoleService, BeYourMarket.Service.IOrderService orderService, BeYourMarket.Service.ISettingDictionaryService settingDictionaryService, BeYourMarket.Service.IEmailTemplateService emailTemplateService, BeYourMarket.Service.DataCacheService dataCacheService, BeYourMarket.Service.SqlDbService sqlDbService)&#xD;&#xA;    Resolving BeYourMarket.Service.IContentPageRoleService,(none)&#xD;&#xA; ---&gt; System.InvalidOperationException: The current type, BeYourMarket.Service.IContentPageRoleService, is an interface and cannot be constructed. Are you missing a type mapping?&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)&#xD;&#xA;   at lambda_method(Closure , IBuilderContext )&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.&lt;&gt;c__DisplayClass1.&lt;GetBuildMethod&gt;b__0(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)&#xD;&#xA;   at lambda_method(Closure , IBuilderContext )&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.DynamicBuildPlanGenerationContext.&lt;&gt;c__DisplayClass1.&lt;GetBuildMethod&gt;b__0(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)&#xD;&#xA;   at Microsoft.Practices.Unity.UnityContainer.Resolve(Type t, String name, ResolverOverride[] resolverOverrides)&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.DefaultControllerActivator.Create(RequestContext requestContext, Type controllerType)&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="admin@Ceesaro.com" time="2017-03-12T01:06:59.9080773Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:.AspNet.ApplicationCookie=WQPfNxFSHcMJMQMuSac2ENph01uzP6q5kerSFgVpDfCbkVrEPmjZJDbu8UZlb6MuwgBIIIu-YwatThxxjt269ogVYvg4Q4AvJHycQR7BPrFBzVathEVUsjoIKuVq9-6RCiVLuwCaTJsHquj1XFgbzFuwGWg8N6kmPANO6wp4qFqZpQj9zHRyppyuyxeoZK-nhTy8WHCv5MJUMh8fH7YBf68aIaBsx7uIvWU9ozJyXMARYqGFPhRdKvuxEqP-eQc8vWR0yQmDUTziCWRVZXjdAW02Rp6iCHOwhbbWiSxBmqXvZFVYbUdrx1Xm7cO-clhxlqIHOVweUWNlVyaRaFC1ofydbzsaFwz1-Y_9LjtLpC2yGLwWWKj9oE-KhfWTUbIhjzxeQJ_kHS_U42mYvHJpKwEoIyWAOOZXC_En6i0x5noCxKGMJYkCHSnVqkQ9z05A7rcwF5W-85_-6qmA5rq8U2wnBKWAHA6StiLP8Ii5HY4JZN_Cy5VNzuhTMstEfJnAPP1E95cL0UlC0Pbj1Phon4wSdaBfZc_EhlV0DjlkplA; __RequestVerificationToken=wdjQsTxYrLEcn-VyfSIopeiJNhS46uokjSMUEZHuCTiWaoRJl4gbariLYIN1JbEZdG6uikU_5x9W6dLGXtUMgpNhfGLIWYIB56dORUK3FDk1&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_REFERER:http://localhost:51583/en/admin&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: .AspNet.ApplicationCookie=WQPfNxFSHcMJMQMuSac2ENph01uzP6q5kerSFgVpDfCbkVrEPmjZJDbu8UZlb6MuwgBIIIu-YwatThxxjt269ogVYvg4Q4AvJHycQR7BPrFBzVathEVUsjoIKuVq9-6RCiVLuwCaTJsHquj1XFgbzFuwGWg8N6kmPANO6wp4qFqZpQj9zHRyppyuyxeoZK-nhTy8WHCv5MJUMh8fH7YBf68aIaBsx7uIvWU9ozJyXMARYqGFPhRdKvuxEqP-eQc8vWR0yQmDUTziCWRVZXjdAW02Rp6iCHOwhbbWiSxBmqXvZFVYbUdrx1Xm7cO-clhxlqIHOVweUWNlVyaRaFC1ofydbzsaFwz1-Y_9LjtLpC2yGLwWWKj9oE-KhfWTUbIhjzxeQJ_kHS_U42mYvHJpKwEoIyWAOOZXC_En6i0x5noCxKGMJYkCHSnVqkQ9z05A7rcwF5W-85_-6qmA5rq8U2wnBKWAHA6StiLP8Ii5HY4JZN_Cy5VNzuhTMstEfJnAPP1E95cL0UlC0Pbj1Phon4wSdaBfZc_EhlV0DjlkplA; __RequestVerificationToken=wdjQsTxYrLEcn-VyfSIopeiJNhS46uokjSMUEZHuCTiWaoRJl4gbariLYIN1JbEZdG6uikU_5x9W6dLGXtUMgpNhfGLIWYIB56dORUK3FDk1&#xD;&#xA;Host: localhost:51583&#xD;&#xA;Referer: http://localhost:51583/en/admin&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/admin/contentpage/contentpages" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\admin\contentpage\contentpages" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="53610" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/admin/contentpage/contentpages" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/admin/contentpage/contentpages" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string=".AspNet.ApplicationCookie=WQPfNxFSHcMJMQMuSac2ENph01uzP6q5kerSFgVpDfCbkVrEPmjZJDbu8UZlb6MuwgBIIIu-YwatThxxjt269ogVYvg4Q4AvJHycQR7BPrFBzVathEVUsjoIKuVq9-6RCiVLuwCaTJsHquj1XFgbzFuwGWg8N6kmPANO6wp4qFqZpQj9zHRyppyuyxeoZK-nhTy8WHCv5MJUMh8fH7YBf68aIaBsx7uIvWU9ozJyXMARYqGFPhRdKvuxEqP-eQc8vWR0yQmDUTziCWRVZXjdAW02Rp6iCHOwhbbWiSxBmqXvZFVYbUdrx1Xm7cO-clhxlqIHOVweUWNlVyaRaFC1ofydbzsaFwz1-Y_9LjtLpC2yGLwWWKj9oE-KhfWTUbIhjzxeQJ_kHS_U42mYvHJpKwEoIyWAOOZXC_En6i0x5noCxKGMJYkCHSnVqkQ9z05A7rcwF5W-85_-6qmA5rq8U2wnBKWAHA6StiLP8Ii5HY4JZN_Cy5VNzuhTMstEfJnAPP1E95cL0UlC0Pbj1Phon4wSdaBfZc_EhlV0DjlkplA; __RequestVerificationToken=wdjQsTxYrLEcn-VyfSIopeiJNhS46uokjSMUEZHuCTiWaoRJl4gbariLYIN1JbEZdG6uikU_5x9W6dLGXtUMgpNhfGLIWYIB56dORUK3FDk1" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:51583/en/admin" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="WQPfNxFSHcMJMQMuSac2ENph01uzP6q5kerSFgVpDfCbkVrEPmjZJDbu8UZlb6MuwgBIIIu-YwatThxxjt269ogVYvg4Q4AvJHycQR7BPrFBzVathEVUsjoIKuVq9-6RCiVLuwCaTJsHquj1XFgbzFuwGWg8N6kmPANO6wp4qFqZpQj9zHRyppyuyxeoZK-nhTy8WHCv5MJUMh8fH7YBf68aIaBsx7uIvWU9ozJyXMARYqGFPhRdKvuxEqP-eQc8vWR0yQmDUTziCWRVZXjdAW02Rp6iCHOwhbbWiSxBmqXvZFVYbUdrx1Xm7cO-clhxlqIHOVweUWNlVyaRaFC1ofydbzsaFwz1-Y_9LjtLpC2yGLwWWKj9oE-KhfWTUbIhjzxeQJ_kHS_U42mYvHJpKwEoIyWAOOZXC_En6i0x5noCxKGMJYkCHSnVqkQ9z05A7rcwF5W-85_-6qmA5rq8U2wnBKWAHA6StiLP8Ii5HY4JZN_Cy5VNzuhTMstEfJnAPP1E95cL0UlC0Pbj1Phon4wSdaBfZc_EhlV0DjlkplA" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="wdjQsTxYrLEcn-VyfSIopeiJNhS46uokjSMUEZHuCTiWaoRJl4gbariLYIN1JbEZdG6uikU_5x9W6dLGXtUMgpNhfGLIWYIB56dORUK3FDk1" />
+    </item>
+  </cookies>
+</error>
