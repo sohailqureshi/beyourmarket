@@ -81,6 +81,7 @@ namespace BeYourMarket.Web.Migrations
         UserName = _installModel.Email,
         FirstName = "Administrator",
         Email = _installModel.Email,
+        EmailConfirmed = true,
         RegisterDate = DateTime.Now,
         RegisterIP = HttpContext.Current.Request.GetVisitorIP(),
         LastAccessDate = DateTime.Now,
