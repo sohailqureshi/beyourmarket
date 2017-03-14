@@ -81,7 +81,7 @@ var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["act
         </li>
 
         <li class="has-submenu @DisplayGroupAttribute("listings")">
-            <a href="#"><i class="fa fa-th-list"></i> <span class="nav-label">[[[Listings]]]</span></a>
+            <a href="#"><i class="fa fa-th-list"></i> <span class="nav-label">[[[Listings]]]</span><i class="mdi-navigation-expand-more pull-right"></i></a>
             <ul class="list-unstyled">
                 <li class="@DisplayAttribute("categories")"><a href="@Url.Action("Categories", "Listing")">[[[Manage Categories]]]</a></li>
                 <li class="@DisplayAttribute("listingtypes")"><a href="@Url.Action("ListingTypes", "Listing")">[[[Manage Listing Types]]]</a></li>
@@ -91,7 +91,7 @@ var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["act
         </li>
 
         <li class="has-submenu @DisplayGroupAttribute("design")">
-            <a href="#"><i class="fa fa-paint-brush"></i> <span class="nav-label">[[[Design]]]</span></a>
+            <a href="#"><i class="fa fa-paint-brush"></i> <span class="nav-label">[[[Design]]]</span><i class="mdi-navigation-expand-more pull-right"></i></a>
             <ul class="list-unstyled">
                 <li class="@DisplayAttribute("appearance")"><a href="@Url.Action("Appearance", "Design")">[[[Appearance]]]</a></li>
                 <li class="@DisplayAttribute("codestyle")"><a href="@Url.Action("CodeStyle", "Design")">[[[Custom CSS]]]</a></li>
@@ -100,7 +100,7 @@ var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["act
         </li>
 
         <li class="has-submenu @DisplayGroupAttribute("settings")">
-            <a href="#"><i class="fa fa-gears"></i> <span class="nav-label">[[[Settings]]]</span></a>
+            <a href="#"><i class="fa fa-gears"></i> <span class="nav-label">[[[Settings]]]</span><i class="mdi-navigation-expand-more pull-right"></i></a>
             <ul class="list-unstyled">
                 <li class="@DisplayAttribute("settings")">
                     <a href="@Url.Action("Settings", "Manage")">[[[General Settings]]]</a>
@@ -118,7 +118,7 @@ var attribute = groupDictionary[menu].Contains(ViewContext.RouteData.Values["act
         </li>
 
         <li class="has-submenu @DisplayGroupAttribute("payments")">
-            <a href="#"><i class="fa fa-dollar"></i> <span class="nav-label">[[[Payments]]]</span></a>
+            <a href="#"><i class="fa fa-dollar"></i> <span class="nav-label">[[[Payments]]]</span><i class="mdi-navigation-expand-more pull-right"></i></a>
             <ul class="list-unstyled">
                 <li class="@DisplayAttribute("order")">
                     <a href="@Url.Action("Order", "Payment")">[[[Orders]]]</a>

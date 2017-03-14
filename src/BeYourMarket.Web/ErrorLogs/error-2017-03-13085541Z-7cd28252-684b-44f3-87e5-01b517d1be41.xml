@@ -1,0 +1,188 @@
+﻿<error errorId="7cd28252-684b-44f3-87e5-01b517d1be41" host="ACERASPIREV" type="Newtonsoft.Json.JsonSerializationException" message="Cannot deserialize the current JSON object (e.g. {&quot;name&quot;:&quot;value&quot;}) into type 'BeYourMarket.Web.Areas.Admin.Controllers.ListingController+CategoryJson[]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.&#xD;&#xA;To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List&lt;T&gt;) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.&#xD;&#xA;Path 'length', line 1, position 10." source="Newtonsoft.Json" detail="Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {&quot;name&quot;:&quot;value&quot;}) into type 'BeYourMarket.Web.Areas.Admin.Controllers.ListingController+CategoryJson[]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.&#xD;&#xA;To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List&lt;T&gt;) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.&#xD;&#xA;Path 'length', line 1, position 10.&#xD;&#xA;   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)&#xD;&#xA;   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)&#xD;&#xA;   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)&#xD;&#xA;   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)&#xD;&#xA;   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)&#xD;&#xA;   at BeYourMarket.Web.Areas.Admin.Controllers.ListingController.&lt;CategoriesUpdate&gt;d__33.MoveNext() in C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Areas\Admin\Controllers\ListingController.cs:line 177&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeAsynchronousActionMethod&gt;b__36(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.&lt;BeginExecuteCore&gt;b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;BeginProcessRequest&gt;b__5(IAsyncResult asyncResult, ProcessRequestState innerState)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="admin@Ceesaro.com" time="2017-03-13T08:55:41.0979890Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:1685&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=RKNu86I4AhRONcLrjNU8Q-ay6pvXFvjPL0IhOXd-eyLMnOmacT6P9MVLQesCblnKnXEzN0rHECu7cX0zBwZNX0QG5Hx_ujmdADN3adcck6LEiHr7vvw3CFL4UxugrPsWMeEWiSfFiABisrhApxl4l5wFxLfBTKiXxLbWRa974RVbBJUFzrzNCW-m-EzxSLPTs0oJXZh7yGUrVEBXGMxKqt90nIMWRShaCg7IuTPXYahTLI-ntHIx5hcpYa5whImU0hQNdVS_4Sb0u4IByQHJYEZSw1yzZ4EcL8sCoWf1fzGLU6RGxoMPmcUdbeUncRhjkhq992q5KyqEGhCRV8nExwTzapsyE-eB1GB3OQq9ihKW1HBU62PK0XQ9I5dx5Ou-nJ8B5Pr_Jd-v3DB_fy2fVg-dbCKX4ixZzrv0J90ZI5HxvGIVXYQHouucluIIX7v6ydc8C7sPh_n0N8teiLq-hvsozUX6gWdDuqqBpbdBcooQNOws6zR8ewOdAKnPCrXNg-FKCRpAzsLczsmRwonDyg&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_REFERER:http://localhost:51583/en/admin/listing/categories&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:51583&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Content-Length: 1685&#xD;&#xA;Content-Type: application/x-www-form-urlencoded&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: __RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=RKNu86I4AhRONcLrjNU8Q-ay6pvXFvjPL0IhOXd-eyLMnOmacT6P9MVLQesCblnKnXEzN0rHECu7cX0zBwZNX0QG5Hx_ujmdADN3adcck6LEiHr7vvw3CFL4UxugrPsWMeEWiSfFiABisrhApxl4l5wFxLfBTKiXxLbWRa974RVbBJUFzrzNCW-m-EzxSLPTs0oJXZh7yGUrVEBXGMxKqt90nIMWRShaCg7IuTPXYahTLI-ntHIx5hcpYa5whImU0hQNdVS_4Sb0u4IByQHJYEZSw1yzZ4EcL8sCoWf1fzGLU6RGxoMPmcUdbeUncRhjkhq992q5KyqEGhCRV8nExwTzapsyE-eB1GB3OQq9ihKW1HBU62PK0XQ9I5dx5Ou-nJ8B5Pr_Jd-v3DB_fy2fVg-dbCKX4ixZzrv0J90ZI5HxvGIVXYQHouucluIIX7v6ydc8C7sPh_n0N8teiLq-hvsozUX6gWdDuqqBpbdBcooQNOws6zR8ewOdAKnPCrXNg-FKCRpAzsLczsmRwonDyg&#xD;&#xA;Host: localhost:51583&#xD;&#xA;Referer: http://localhost:51583/en/admin/listing/categories&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:51583&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="1685" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/admin/listing/categoriesupdate" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\admin\listing\categoriesupdate" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="60081" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/admin/listing/categoriesupdate" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/admin/listing/categoriesupdate" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="1685" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=RKNu86I4AhRONcLrjNU8Q-ay6pvXFvjPL0IhOXd-eyLMnOmacT6P9MVLQesCblnKnXEzN0rHECu7cX0zBwZNX0QG5Hx_ujmdADN3adcck6LEiHr7vvw3CFL4UxugrPsWMeEWiSfFiABisrhApxl4l5wFxLfBTKiXxLbWRa974RVbBJUFzrzNCW-m-EzxSLPTs0oJXZh7yGUrVEBXGMxKqt90nIMWRShaCg7IuTPXYahTLI-ntHIx5hcpYa5whImU0hQNdVS_4Sb0u4IByQHJYEZSw1yzZ4EcL8sCoWf1fzGLU6RGxoMPmcUdbeUncRhjkhq992q5KyqEGhCRV8nExwTzapsyE-eB1GB3OQq9ihKW1HBU62PK0XQ9I5dx5Ou-nJ8B5Pr_Jd-v3DB_fy2fVg-dbCKX4ixZzrv0J90ZI5HxvGIVXYQHouucluIIX7v6ydc8C7sPh_n0N8teiLq-hvsozUX6gWdDuqqBpbdBcooQNOws6zR8ewOdAKnPCrXNg-FKCRpAzsLczsmRwonDyg" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:51583/en/admin/listing/categories" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:51583" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="JsonCategories">
+      <value string="{&quot;length&quot;:0,&quot;prevObject&quot;:{&quot;0&quot;:{&quot;location&quot;:{&quot;hash&quot;:&quot;&quot;,&quot;search&quot;:&quot;&quot;,&quot;pathname&quot;:&quot;/en/admin/listing/categories&quot;,&quot;port&quot;:&quot;51583&quot;,&quot;hostname&quot;:&quot;localhost&quot;,&quot;host&quot;:&quot;localhost:51583&quot;,&quot;protocol&quot;:&quot;http:&quot;,&quot;origin&quot;:&quot;http://localhost:51583&quot;,&quot;href&quot;:&quot;http://localhost:51583/en/admin/listing/categories&quot;,&quot;ancestorOrigins&quot;:{}},&quot;_html5shiv&quot;:1,&quot;jQuery110207305558498331559&quot;:1},&quot;context&quot;:{&quot;location&quot;:{&quot;hash&quot;:&quot;&quot;,&quot;search&quot;:&quot;&quot;,&quot;pathname&quot;:&quot;/en/admin/listing/categories&quot;,&quot;port&quot;:&quot;51583&quot;,&quot;hostname&quot;:&quot;localhost&quot;,&quot;host&quot;:&quot;localhost:51583&quot;,&quot;protocol&quot;:&quot;http:&quot;,&quot;origin&quot;:&quot;http://localhost:51583&quot;,&quot;href&quot;:&quot;http://localhost:51583/en/admin/listing/categories&quot;,&quot;ancestorOrigins&quot;:{}},&quot;_html5shiv&quot;:1,&quot;jQuery110207305558498331559&quot;:1},&quot;length&quot;:1},&quot;context&quot;:{&quot;location&quot;:{&quot;hash&quot;:&quot;&quot;,&quot;search&quot;:&quot;&quot;,&quot;pathname&quot;:&quot;/en/admin/listing/categories&quot;,&quot;port&quot;:&quot;51583&quot;,&quot;hostname&quot;:&quot;localhost&quot;,&quot;host&quot;:&quot;localhost:51583&quot;,&quot;protocol&quot;:&quot;http:&quot;,&quot;origin&quot;:&quot;http://localhost:51583&quot;,&quot;href&quot;:&quot;http://localhost:51583/en/admin/listing/categories&quot;,&quot;ancestorOrigins&quot;:{}},&quot;_html5shiv&quot;:1,&quot;jQuery110207305558498331559&quot;:1},&quot;selector&quot;:&quot;.nestable&quot;}" />
+    </item>
+  </form>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="hltbl3lk0ut5wrc3xddhlbdr" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="RKNu86I4AhRONcLrjNU8Q-ay6pvXFvjPL0IhOXd-eyLMnOmacT6P9MVLQesCblnKnXEzN0rHECu7cX0zBwZNX0QG5Hx_ujmdADN3adcck6LEiHr7vvw3CFL4UxugrPsWMeEWiSfFiABisrhApxl4l5wFxLfBTKiXxLbWRa974RVbBJUFzrzNCW-m-EzxSLPTs0oJXZh7yGUrVEBXGMxKqt90nIMWRShaCg7IuTPXYahTLI-ntHIx5hcpYa5whImU0hQNdVS_4Sb0u4IByQHJYEZSw1yzZ4EcL8sCoWf1fzGLU6RGxoMPmcUdbeUncRhjkhq992q5KyqEGhCRV8nExwTzapsyE-eB1GB3OQq9ihKW1HBU62PK0XQ9I5dx5Ou-nJ8B5Pr_Jd-v3DB_fy2fVg-dbCKX4ixZzrv0J90ZI5HxvGIVXYQHouucluIIX7v6ydc8C7sPh_n0N8teiLq-hvsozUX6gWdDuqqBpbdBcooQNOws6zR8ewOdAKnPCrXNg-FKCRpAzsLczsmRwonDyg" />
+    </item>
+  </cookies>
+</error>

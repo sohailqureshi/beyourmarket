@@ -1,0 +1,174 @@
+﻿<error errorId="cba7ff6a-076c-4c42-b94b-c26b01f5c804" host="ACERASPIREV" type="System.InvalidOperationException" message="The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[BeYourMarket.Model.Models.MetaField]', but this dictionary requires a model item of type 'BeYourMarket.Web.Models.SearchListingModel'." source="System.Web.Mvc" detail="System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[BeYourMarket.Model.Models.MetaField]', but this dictionary requires a model item of type 'BeYourMarket.Web.Models.SearchListingModel'.&#xD;&#xA;   at System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)&#xD;&#xA;   at System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)&#xD;&#xA;   at System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)&#xD;&#xA;   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)&#xD;&#xA;   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)&#xD;&#xA;   at ASP._Page_Views_Listing_Listings_cshtml.Execute() in c:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Views\Listing\Listings.cshtml:line 83&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.WebPages.StartPage.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)&#xD;&#xA;   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="admin@Ceesaro.com" time="2017-03-14T10:57:56.0418992Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=0zoWHRbDb2HeBXFTJWRIyTUazuineC028NJtPVvq3RmAJd0diTi1p8PFT2qPm9GOGF_RqsF-f_i3LaIPV9eRszn2hVsepmmkK-zSShgvSHDUTdIcJG05I-uxLFmIlNFp1vdWzSwAuH1tRat1pjlEAwCTXVKenSgdfaFvNZNHi2J5AllIi7v01gUUzsB-bPKNx-xhsWrLLZgiOZ4npjWBEta5Rix3BmAtsY0dnWaYKKvGwMeRYlnGXUFtBrb-mywsAhEpW2MSGHzdfW3h2QRY1_ZlR0QvNwhuC4mrUgXphL_ctiPTYdvzELkA86I83COYOHpf6f84LkXJEOI2ktJqbn14UdxuwE5RgzlgAfzdcj-rQ9-ba_4tAJab1QhZzJJQ_QR676Xvv2yLCF9Vn7Em6bO9ecFGbu7hYpRfF1ai8uoFlzSsIgdxO3u0Z7Oxj9c1zsxha12LIyAEot1sK9T9kgPe6sNOACeIzkQdR8Y77ba3bckj9hZKSFnqwJUWTck8l5vl_CGz4WlJ-RFHESUrbg&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_REFERER:http://localhost:51583/en/home/search?CategoryID=&amp;ListingTypeID=1&amp;Location=&amp;PriceFrom=&amp;PriceTo=&amp;CustomFields%5B1%5D=5&amp;SearchText=&amp;SortView=Grid&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: __RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=0zoWHRbDb2HeBXFTJWRIyTUazuineC028NJtPVvq3RmAJd0diTi1p8PFT2qPm9GOGF_RqsF-f_i3LaIPV9eRszn2hVsepmmkK-zSShgvSHDUTdIcJG05I-uxLFmIlNFp1vdWzSwAuH1tRat1pjlEAwCTXVKenSgdfaFvNZNHi2J5AllIi7v01gUUzsB-bPKNx-xhsWrLLZgiOZ4npjWBEta5Rix3BmAtsY0dnWaYKKvGwMeRYlnGXUFtBrb-mywsAhEpW2MSGHzdfW3h2QRY1_ZlR0QvNwhuC4mrUgXphL_ctiPTYdvzELkA86I83COYOHpf6f84LkXJEOI2ktJqbn14UdxuwE5RgzlgAfzdcj-rQ9-ba_4tAJab1QhZzJJQ_QR676Xvv2yLCF9Vn7Em6bO9ecFGbu7hYpRfF1ai8uoFlzSsIgdxO3u0Z7Oxj9c1zsxha12LIyAEot1sK9T9kgPe6sNOACeIzkQdR8Y77ba3bckj9hZKSFnqwJUWTck8l5vl_CGz4WlJ-RFHESUrbg&#xD;&#xA;Host: localhost:51583&#xD;&#xA;Referer: http://localhost:51583/en/home/search?CategoryID=&amp;ListingTypeID=1&amp;Location=&amp;PriceFrom=&amp;PriceTo=&amp;CustomFields%5B1%5D=5&amp;SearchText=&amp;SortView=Grid&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/home/search" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\home\search" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="64128" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/home/search" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/home/search" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=0zoWHRbDb2HeBXFTJWRIyTUazuineC028NJtPVvq3RmAJd0diTi1p8PFT2qPm9GOGF_RqsF-f_i3LaIPV9eRszn2hVsepmmkK-zSShgvSHDUTdIcJG05I-uxLFmIlNFp1vdWzSwAuH1tRat1pjlEAwCTXVKenSgdfaFvNZNHi2J5AllIi7v01gUUzsB-bPKNx-xhsWrLLZgiOZ4npjWBEta5Rix3BmAtsY0dnWaYKKvGwMeRYlnGXUFtBrb-mywsAhEpW2MSGHzdfW3h2QRY1_ZlR0QvNwhuC4mrUgXphL_ctiPTYdvzELkA86I83COYOHpf6f84LkXJEOI2ktJqbn14UdxuwE5RgzlgAfzdcj-rQ9-ba_4tAJab1QhZzJJQ_QR676Xvv2yLCF9Vn7Em6bO9ecFGbu7hYpRfF1ai8uoFlzSsIgdxO3u0Z7Oxj9c1zsxha12LIyAEot1sK9T9kgPe6sNOACeIzkQdR8Y77ba3bckj9hZKSFnqwJUWTck8l5vl_CGz4WlJ-RFHESUrbg" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:51583/en/home/search?CategoryID=&amp;ListingTypeID=1&amp;Location=&amp;PriceFrom=&amp;PriceTo=&amp;CustomFields%5B1%5D=5&amp;SearchText=&amp;SortView=Grid" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="hltbl3lk0ut5wrc3xddhlbdr" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="0zoWHRbDb2HeBXFTJWRIyTUazuineC028NJtPVvq3RmAJd0diTi1p8PFT2qPm9GOGF_RqsF-f_i3LaIPV9eRszn2hVsepmmkK-zSShgvSHDUTdIcJG05I-uxLFmIlNFp1vdWzSwAuH1tRat1pjlEAwCTXVKenSgdfaFvNZNHi2J5AllIi7v01gUUzsB-bPKNx-xhsWrLLZgiOZ4npjWBEta5Rix3BmAtsY0dnWaYKKvGwMeRYlnGXUFtBrb-mywsAhEpW2MSGHzdfW3h2QRY1_ZlR0QvNwhuC4mrUgXphL_ctiPTYdvzELkA86I83COYOHpf6f84LkXJEOI2ktJqbn14UdxuwE5RgzlgAfzdcj-rQ9-ba_4tAJab1QhZzJJQ_QR676Xvv2yLCF9Vn7Em6bO9ecFGbu7hYpRfF1ai8uoFlzSsIgdxO3u0Z7Oxj9c1zsxha12LIyAEot1sK9T9kgPe6sNOACeIzkQdR8Y77ba3bckj9hZKSFnqwJUWTck8l5vl_CGz4WlJ-RFHESUrbg" />
+    </item>
+  </cookies>
+</error>

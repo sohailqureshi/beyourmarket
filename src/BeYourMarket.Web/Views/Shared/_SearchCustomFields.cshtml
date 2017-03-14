@@ -1,0 +1,79 @@
+﻿@model BeYourMarket.Web.Models.SearchListingModel
+  @{ int listcount = 0; }
+<fieldset>
+  @for (int i =0; i< Model.CustomFields.Count; i++)
+  {
+    var controlType = (BeYourMarket.Model.Enum.Enum_MetaFieldControlType)Model.CustomFields[i].ControlTypeID;
+    var options = new string[] { };
+    if (!string.IsNullOrEmpty(Model.CustomFields[i].Options))
+    {
+      options = Model.CustomFields[i].Options.Split(new char[] { ',' });
+    }
+
+    string controlOptions = string.Format("CustomFields[{0}].Options", listcount);
+    string controlName = Model.CustomFields[i].Name;
+    string controlPlaceHolder = Model.CustomFields[i].Placeholder;
+
+    @Html.HiddenFor(model => Model.CustomFields[i].ID)
+    @Html.HiddenFor(model => Model.CustomFields[i].Name)
+    @Html.HiddenFor(model => Model.CustomFields[i].Placeholder)
+    @Html.HiddenFor(model => Model.CustomFields[i].ControlTypeID)
+    switch (controlType)
+    {
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.None:
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.DropdownList:
+        <div class="form-group">
+         <label>@controlName</label>
+         <select class="form-control" name="@controlOptions" id="@controlOptions" data-placeholder="@controlPlaceHolder">
+           <option value="">[[[Select All]]]</option>
+            @foreach (var option in options)
+            {
+              <option value="@option">@option</option>
+            }
+          </select>
+        </div>
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.RadioList:
+        <div class="form-group">
+          <label>@controlName</label>
+          <div>
+              @foreach (var option in options)
+              {
+                <input type="radio" id="@controlOptions" name="@controlOptions" value="@option" />
+                <label for="@controlOptions">@option</label>
+              }
+          </div>
+        </div>
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.Checkboxes:
+          <div class="form-group">
+            <label>@controlName</label>
+              @foreach (var option in options)
+              {
+                <input type="checkbox" id="@controlOptions" name="@controlOptions" value="@option" />
+                <label for="@controlOptions">@option</label>
+              }
+          </div>
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.TextBox:
+          <div class="form-group">
+            <label>@controlName</label>
+            <input type="text" id="@controlOptions" name="@controlOptions" class="form-control input-lg" placeholder="@controlPlaceHolder">
+          </div>
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.MultilineTextbox:
+          <div class="form-group">
+            <label>@controlName</label>
+            <textarea class="form-control input-lg" rows="4" placeholder="@controlPlaceHolder" id="@controlOptions" name="@controlOptions" ></textarea>
+          </div>
+        break;
+      case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.Datepicker:
+        break;
+      default:
+        break;
+    }
+    listcount++;
+  }
+</fieldset>
+

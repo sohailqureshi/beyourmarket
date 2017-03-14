@@ -66,6 +66,7 @@ namespace BeYourMarket.Web.App_Start
                 .RegisterType<ICustomFieldListingService, CustomFieldListingService>()
                 .RegisterType<IContentPageService, ContentPageService>()
                 .RegisterType<IContentPageRoleService, ContentPageRoleService>()
+                .RegisterType<IMetaFieldService, MetaFieldService>()
                 .RegisterType<ISettingDictionaryService, SettingDictionaryService>()
                 .RegisterType<IListingStatService, ListingStatService>()
                 .RegisterType<IEmailTemplateService, EmailTemplateService>()

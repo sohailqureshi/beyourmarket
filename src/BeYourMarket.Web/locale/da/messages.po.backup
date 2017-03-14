@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-03-12 21:04+00:00\n"
-"PO-Revision-Date: 2017-03-12 21:04+00:00\n"
+"POT-Creation-Date: 2017-03-14 16:39+00:00\n"
+"PO-Revision-Date: 2017-03-14 16:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,7 +67,7 @@ msgid "add an option"
 msgstr "Tilføj valgmulighed"
 
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:28
-#: Areas\Admin\Views\Listing\Categories.cshtml:49
+#: Areas\Admin\Views\Listing\Categories.cshtml:50
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:46
 #: Areas\Admin\Views\Listing\Listings.cshtml:44
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:46
@@ -80,7 +80,7 @@ msgid "Admin"
 msgstr "Admin"
 
 #: Views\Shared\_LoginPartial.cshtml:68
-#: Views\Shared\_NavigationSide.cshtml:93
+#: Views\Shared\_NavigationSide.cshtml:97
 msgid "Admin Panel"
 msgstr "Admin panel"
 
@@ -105,7 +105,7 @@ msgid "Agreement Text"
 msgstr "Aftale tekst"
 
 #: Views\Listing\Listings.cshtml:51
-#: Views\Shared\_NavigationSide.cshtml:26
+#: Views\Shared\_NavigationSide.cshtml:107
 msgid "All Categories"
 msgstr "Alle kategorier"
 
@@ -131,13 +131,13 @@ msgstr "Der opstod en fejl"
 msgid "Appearance"
 msgstr "Udseende"
 
-#: Views\Listing\Listings.cshtml:95
+#: Views\Listing\Listings.cshtml:99
 msgid "Apply"
 msgstr "Tilføj"
 
 #: Views\Manage\Dashboard.cshtml:67
 #: Views\Payment\Orders.cshtml:166
-#: Areas\Admin\Views\Listing\Categories.cshtml:101
+#: Areas\Admin\Views\Listing\Categories.cshtml:104
 #: Areas\Admin\Views\Listing\Listings.cshtml:92
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:102
 #: Areas\Admin\Views\Manage\Users.cshtml:77
@@ -174,8 +174,8 @@ msgstr "Label"
 #: Areas\Admin\Views\Design\Appearance.cshtml:45
 #: Areas\Admin\Views\Design\CodeScript.cshtml:35
 #: Areas\Admin\Views\Design\CodeStyle.cshtml:35
-#: Areas\Admin\Views\Listing\Categories.cshtml:71
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:59
+#: Areas\Admin\Views\Listing\Categories.cshtml:74
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:66
 #: Areas\Admin\Views\Listing\CustomFieldUpdate.cshtml:91
 #: Areas\Admin\Views\Listing\ListingTypeUpdate.cshtml:113
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:196
@@ -204,7 +204,7 @@ msgstr "Annulleret"
 msgid "Cancelled!"
 msgstr "Annulleret"
 
-#: Views\Shared\_NavigationSide.cshtml:99
+#: Views\Shared\_NavigationSide.cshtml:103
 #: Areas\Admin\Views\Listing\Categories.cshtml:8
 #: Areas\Admin\Views\Listing\Categories.cshtml:37
 msgid "Categories"
@@ -224,7 +224,7 @@ msgstr "Kategorier"
 msgid "Category"
 msgstr "Kategori"
 
-#: Areas\Admin\Views\Listing\Categories.cshtml:121
+#: Areas\Admin\Views\Listing\Categories.cshtml:126
 msgid "Category is deleted."
 msgstr ""
 
@@ -349,7 +349,7 @@ msgid "Contact number (Double click to show)"
 msgstr ""
 
 #: Views\Home\Contact.cshtml:16
-#: Views\Shared\_NavigationSide.cshtml:112
+#: Views\Shared\_NavigationSide.cshtml:122
 msgid "Contact us"
 msgstr "Kontakt os"
 
@@ -378,7 +378,7 @@ msgstr "Opret"
 
 #: Views\Account\Register.cshtml:12
 #: Views\Shared\_LoginPartial.cshtml:82
-#: Views\Shared\_NavigationSide.cshtml:66
+#: Views\Shared\_NavigationSide.cshtml:70
 msgid "Create an account"
 msgstr "Opret konto"
 
@@ -431,7 +431,7 @@ msgstr "Brugerdefineret Javascript"
 
 #: Views\Manage\Dashboard.cshtml:4
 #: Views\Shared\_LoginPartial.cshtml:62
-#: Views\Shared\_NavigationSide.cshtml:79
+#: Views\Shared\_NavigationSide.cshtml:83
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:3
 #: Areas\Admin\Views\Shared\_NavigationSide.cshtml:80
 msgid "Dashboard"
@@ -498,7 +498,7 @@ msgstr ""
 #: Views\Listing\_ListingGridList.cshtml:40
 #: Views\Payment\Orders.cshtml:128
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:37
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:26
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:33
 #: Areas\Admin\Views\Listing\Listings.cshtml:69
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:49
 #: Areas\Admin\Views\Manage\Settings.cshtml:28
@@ -525,6 +525,10 @@ msgstr "Du er ikke længere forbundet til Stripe"
 
 #: Areas\Admin\Views\Manage\Settings.cshtml:161
 msgid "Documentation about Date and Time Format."
+msgstr ""
+
+#: Areas\Admin\Views\Listing\Categories.cshtml:45
+msgid "Drag and Drop each category to create sub-categories"
 msgstr ""
 
 #: Areas\Admin\Views\Listing\ListingTypeUpdate.cshtml:42
@@ -612,7 +616,7 @@ msgstr "Email skabeloner"
 msgid "Enable"
 msgstr "Aktivér"
 
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:37
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:44
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:143
 #: Areas\Admin\Views\Manage\Settings.cshtml:75
 #: Areas\Admin\Views\Manage\Settings.cshtml:96
@@ -757,7 +761,7 @@ msgstr "Fulde navn"
 msgid "General Settings"
 msgstr "Generelle indstillinger"
 
-#: Views\Listing\Listings.cshtml:108
+#: Views\Listing\Listings.cshtml:112
 msgid "Grid"
 msgstr "Gitter"
 
@@ -770,8 +774,8 @@ msgid "Guide"
 msgstr "Guide"
 
 #: Areas\Admin\Views\Listing\Categories.cshtml:44
-msgid "Here you can add categories and subcategories. There shall always be one category for each listing."
-msgstr "Her kan du tilføje kategorier og underkategorier. En annonce skal mindst have én kategori."
+msgid "Here you can add categories and sub-categories. There shall always be one category for each listing."
+msgstr ""
 
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:41
 msgid "Here you can define custom fields for listings in different categories."
@@ -896,7 +900,7 @@ msgstr "Seneste annoncer"
 msgid "Let me in"
 msgstr "Luk mig ind"
 
-#: Views\Listing\Listings.cshtml:109
+#: Views\Listing\Listings.cshtml:113
 msgid "List"
 msgstr "Liste"
 
@@ -919,7 +923,7 @@ msgstr ""
 #: Views\Listing\Listing.cshtml:159
 #: Views\Listing\Listings.cshtml:55
 #: Views\Shared\_ListingTypes.cshtml:6
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:44
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:51
 #: Areas\Admin\Views\Listing\Listings.cshtml:66
 #: Areas\Admin\Views\Listing\ListingTypeUpdate.cshtml:16
 #: Areas\Admin\Views\Shared\_ListingTypes.cshtml:5
@@ -946,7 +950,7 @@ msgid "Listing Update"
 msgstr "Opdatér annonce"
 
 #: Views\Listing\Listings.cshtml:9
-#: Views\Listing\Listings.cshtml:116
+#: Views\Listing\Listings.cshtml:120
 #: Views\Listing\Profile.cshtml:43
 #: Views\Shared\_DashBoardSide.cshtml:10
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:10
@@ -982,7 +986,7 @@ msgid "Locked Out."
 msgstr "Udelukket."
 
 #: Views\Shared\_LoginPartial.cshtml:85
-#: Views\Shared\_NavigationSide.cshtml:61
+#: Views\Shared\_NavigationSide.cshtml:65
 msgid "Log in"
 msgstr "Log ind"
 
@@ -1097,7 +1101,7 @@ msgstr "Mindste salgspris"
 msgid "My Listings"
 msgstr "Mine annoncer"
 
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:19
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:26
 #: Areas\Admin\Views\Listing\CustomFields.cshtml:62
 #: Areas\Admin\Views\Listing\CustomFieldUpdate.cshtml:40
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:67
@@ -1135,14 +1139,14 @@ msgid "No!"
 msgstr "Nej"
 
 #: Views\Manage\Dashboard.cshtml:73
-#: Areas\Admin\Views\Listing\Categories.cshtml:107
+#: Areas\Admin\Views\Listing\Categories.cshtml:110
 #: Areas\Admin\Views\Listing\Listings.cshtml:98
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:108
 #: Areas\Admin\Views\Manage\Users.cshtml:83
 msgid "No, cancel please!"
 msgstr "Nej, annullér"
 
-#: Views\Listing\Listings.cshtml:88
+#: Views\Listing\Listings.cshtml:92
 msgid "Only show listings with photos"
 msgstr "Vis kun annoncer med billeder"
 
@@ -1195,7 +1199,7 @@ msgstr "Ordrer"
 msgid "Other Info"
 msgstr "Yderligere info"
 
-#: Views\Listing\Listings.cshtml:141
+#: Views\Listing\Listings.cshtml:145
 msgid "Page {0} of {1}"
 msgstr "Side {0} af {1}"
 
@@ -1204,6 +1208,10 @@ msgstr "Side {0} af {1}"
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:21
 msgid "Paid"
 msgstr "Betalt"
+
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:19
+msgid "Parent"
+msgstr ""
 
 #: Models\AccountViewModels.cs:58
 #: Models\AccountViewModels.cs:75
@@ -1296,6 +1304,10 @@ msgstr "Klik her for at logge ind"
 msgid "Please Rate"
 msgstr ""
 
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:21
+msgid "Please Select"
+msgstr ""
+
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Controllers\PaymentStripeController.cs:383
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.Disqus\Controllers\DisqusController.cs:83
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Widget.GoogleAnalytics\Controllers\GoogleAnalyticsController.cs:65
@@ -1372,8 +1384,8 @@ msgstr "Opret annonce"
 #: Views\Manage\Dashboard.cshtml:28
 #: Views\Shared\_Layout.cshtml:74
 #: Views\Shared\_LoginPartial.cshtml:63
-#: Views\Shared\_NavigationSide.cshtml:71
-#: Views\Shared\_NavigationSide.cshtml:85
+#: Views\Shared\_NavigationSide.cshtml:75
+#: Views\Shared\_NavigationSide.cshtml:89
 msgid "Publish new listing"
 msgstr "Opret annonce"
 
@@ -1470,8 +1482,8 @@ msgstr ""
 #: Areas\Admin\Views\Design\Appearance.cshtml:44
 #: Areas\Admin\Views\Design\CodeScript.cshtml:34
 #: Areas\Admin\Views\Design\CodeStyle.cshtml:34
-#: Areas\Admin\Views\Listing\Categories.cshtml:70
-#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:58
+#: Areas\Admin\Views\Listing\Categories.cshtml:73
+#: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:65
 #: Areas\Admin\Views\Listing\CustomFieldUpdate.cshtml:90
 #: Areas\Admin\Views\Listing\ListingTypeUpdate.cshtml:112
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:195
@@ -1498,11 +1510,11 @@ msgstr "Søg..."
 msgid "Search PlaceHolder"
 msgstr "Pladsholdertekst for søg"
 
-#: Views\Listing\Listings.cshtml:84
+#: Views\Listing\Listings.cshtml:88
 msgid "Search text"
 msgstr ""
 
-#: Views\Listing\Listings.cshtml:83
+#: Views\Listing\Listings.cshtml:87
 msgid "Search Text"
 msgstr "Søgetekst"
 
@@ -1525,6 +1537,10 @@ msgstr "Se alle annoncer"
 
 #: Views\Shared\_LoginPartial.cshtml:49
 msgid "See all messages"
+msgstr ""
+
+#: Views\Shared\_SearchCustomFields.cshtml:29
+msgid "Select All"
 msgstr ""
 
 #: Views\Account\SendCode.cshtml:15
@@ -1685,15 +1701,15 @@ msgstr "Tak for din ordre. Din betaling vil ikke blive trukket, før annoncøren
 msgid "The {0} must be at least {2} characters long."
 msgstr "{0} skal være mindst {2} tegn."
 
-#: Areas\Admin\Controllers\ListingController.cs:704
+#: Areas\Admin\Controllers\ListingController.cs:707
 msgid "The category has been deleted."
 msgstr ""
 
-#: Areas\Admin\Controllers\ListingController.cs:666
+#: Areas\Admin\Controllers\ListingController.cs:669
 msgid "The listing has been deleted."
 msgstr ""
 
-#: Areas\Admin\Controllers\ListingController.cs:688
+#: Areas\Admin\Controllers\ListingController.cs:691
 msgid "The listing type has been deleted."
 msgstr ""
 
@@ -1728,6 +1744,10 @@ msgstr "Annoncøren har ikke opsat nogen betalingsmetode endnu. Venligst kontakt
 msgid "Theme"
 msgstr "Tema"
 
+#: Areas\Admin\Controllers\ListingController.cs:393
+msgid "There are no categories available yet."
+msgstr ""
+
 #: Views\Listing\_ListingGridList.cshtml:28
 #: Views\Payment\Orders.cshtml:102
 #: C:\inetpub\wwwroot\beyourmarket\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:40
@@ -1755,8 +1775,7 @@ msgstr ""
 
 #: Controllers\ListingController.cs:186
 #: Controllers\ListingController.cs:377
-#: Areas\Admin\Controllers\ListingController.cs:390
-#: Areas\Admin\Controllers\ListingController.cs:490
+#: Areas\Admin\Controllers\ListingController.cs:493
 msgid "There are not categories available yet."
 msgstr "Der er ikke oprettet nogen kategorier endnu."
 
@@ -1845,8 +1864,8 @@ msgstr "Transaktioner"
 msgid "Type"
 msgstr "Type"
 
-#: Areas\Admin\Views\Listing\Categories.cshtml:108
-#: Areas\Admin\Views\Listing\Categories.cshtml:116
+#: Areas\Admin\Views\Listing\Categories.cshtml:111
+#: Areas\Admin\Views\Listing\Categories.cshtml:121
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:109
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:117
 #: Areas\Admin\Views\Manage\Users.cshtml:84
@@ -1985,7 +2004,7 @@ msgid "Yes!"
 msgstr "Ja"
 
 #: Views\Manage\Dashboard.cshtml:72
-#: Areas\Admin\Views\Listing\Categories.cshtml:106
+#: Areas\Admin\Views\Listing\Categories.cshtml:109
 #: Areas\Admin\Views\Listing\Listings.cshtml:97
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:107
 #: Areas\Admin\Views\Manage\Users.cshtml:82
@@ -2001,7 +2020,7 @@ msgid "You cannot delete Administrator, change the user role first."
 msgstr ""
 
 #: Controllers\ListingController.cs:608
-#: Areas\Admin\Controllers\ListingController.cs:657
+#: Areas\Admin\Controllers\ListingController.cs:660
 msgid "You cannot delete item with orders! You can deactivate it instead."
 msgstr "Du kan ikke slette varer, der har udestående ordre. Du kan deaktivere varen i stedet."
 
@@ -2018,7 +2037,7 @@ msgstr ""
 msgid "You cannot send message to yourself!"
 msgstr ""
 
-#: Areas\Admin\Controllers\ListingController.cs:677
+#: Areas\Admin\Controllers\ListingController.cs:680
 msgid "You cannot the listing type. There should be at least one listing type."
 msgstr ""
 
@@ -2035,7 +2054,7 @@ msgstr ""
 msgid "You will delete"
 msgstr "Du vil slette"
 
-#: Areas\Admin\Views\Listing\Categories.cshtml:102
+#: Areas\Admin\Views\Listing\Categories.cshtml:105
 msgid "You will delete all listings with the category "
 msgstr ""
 
@@ -2067,6 +2086,9 @@ msgstr "Din adgangskode er blevet nulstillet"
 
 #~ msgid "Administrator"
 #~ msgstr "Administrator"
+
+#~ msgid "Here you can add categories and subcategories. There shall always be one category for each listing."
+#~ msgstr "Her kan du tilføje kategorier og underkategorier. En annonce skal mindst have én kategori."
 
 #~ msgid "Manage Pages"
 #~ msgstr "Administrér sider"

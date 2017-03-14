@@ -87,6 +87,7 @@
     <Compile Include="Models\Statistics.cs" />
     <Compile Include="MessageService.cs" />
     <Compile Include="OrderService.cs" />
+    <Compile Include="MetaFieldService.cs" />
     <Compile Include="PictureService.cs" />
     <Compile Include="ListingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

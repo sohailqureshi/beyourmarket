@@ -41,7 +41,8 @@
                     @Html.Partial("_UserMessage")
 
                     <div class="alert alert-info">
-                        <p>[[[Here you can add categories and subcategories. There shall always be one category for each listing.]]]</p>
+                      <p>[[[Here you can add categories and sub-categories. There shall always be one category for each listing.]]]</p>
+                      <p>[[[Drag and Drop each category to create sub-categories]]]</p>
                     </div>
 
                     <div class="row">
@@ -57,9 +58,11 @@
 
                         <div class="form-group">
                             <div class="col-lg-12">
-                                <div class="dd nestable">
-                                    @DisplayTree(Model)
+                              <div class="cf nestable-lists">
+                                <div class="dd" id="nestable">
+                                  @DisplayTree(Model)
                                 </div>
+                              </div>
                             </div>
                         </div>
 
@@ -79,48 +82,50 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/nestable/jquery.nestable.js"></script>
+  <script src="~/js/nestable/jquery.nestable.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.nestable')
-                .nestable({
-                    maxDepth: 2
-                })
-                .on('change', function (e) {
-                    $('#JsonCategories').val(JSON.stringify($('.nestable').nestable('serialize')));
-                });
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#nestable')
+          .nestable({
+              maxDepth: 2
+          })
+          .on('change', function (e) {
+              $('#JsonCategories').val(JSON.stringify($('#nestable').nestable('serialize')));
+          });
 
-            $('#JsonCategories').val(JSON.stringify($('.nestable').nestable('serialize')));
-        });
-    </script>
+      $('#JsonCategories').val(JSON.stringify($('#nestable').nestable('serialize')));
+    });
+  </script>
 
-    <script type="text/javascript">
-        function confirmDelete(id, title) {
-            swal({
-                title: "[[[Are you sure?]]]",
-                text: "[[[You will delete all listings with the category ]]] " + title,
-                type: "input",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "[[[Yes, delete it!]]]",
-                cancelButtonText: "[[[No, cancel please!]]]",
-                inputPlaceholder: "[[[Type DELETE to confirm delete]]]",
-                closeOnConfirm: false,
-                closeOnCancel: true
-            }, function (inputValue) {
+  <script type="text/javascript">
+    function confirmDelete(id, title) {
+      swal({
+          title: "[[[Are you sure?]]]",
+          text: "[[[You will delete all listings with the category ]]] " + title,
+          type: "input",
+          showCancelButton: true,
+          confirmButtonColor: "#DD6B55",
+          confirmButtonText: "[[[Yes, delete it!]]]",
+          cancelButtonText: "[[[No, cancel please!]]]",
+          inputPlaceholder: "[[[Type DELETE to confirm delete]]]",
+          closeOnConfirm: false,
+          closeOnCancel: true
+      },
 
-                if (inputValue === false)
-                    return false;
-                if (inputValue === "" || inputValue != "DELETE") {
-                    swal.showInputError("[[[Type DELETE to confirm delete]]]"); return false
-                }
+      function (inputValue) {
 
-                post('@Url.Action("CategoryDelete","Listing")', { id: id });
-
-                swal("Deleted!", "[[[Category is deleted.]]]", "success");
-            });
+        if (inputValue === false)
+            return false;
+        if (inputValue === "" || inputValue != "DELETE") {
+            swal.showInputError("[[[Type DELETE to confirm delete]]]"); return false
         }
-    </script>
+
+        post('@Url.Action("CategoryDelete","Listing")', { id: id });
+
+        swal("Deleted!", "[[[Category is deleted.]]]", "success");
+      });
+    }
+  </script>
 }
 

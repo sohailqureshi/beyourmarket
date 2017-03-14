@@ -47,6 +47,11 @@ namespace BeYourMarket.Service
       get { return _container.Resolve<IContentPageRoleService>(); }
     }
 
+    private IMetaFieldService MetaFieldService
+    {
+      get { return _container.Resolve<IMetaFieldService>(); }
+    }
+
     private IEmailTemplateService EmailTemplateService
     {
       get { return _container.Resolve<IEmailTemplateService>(); }

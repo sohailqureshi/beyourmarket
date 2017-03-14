@@ -25,6 +25,8 @@ namespace BeYourMarket.Web.Controllers
     private readonly IListingService _listingService;
     private readonly IContentPageService _contentPageService;
     private readonly IContentPageRoleService _contentPageRoleService;
+    private readonly ICustomFieldCategoryService _customFieldCategoryService;
+    private readonly IMetaFieldService _metaFieldService;
     #endregion
 
     #region Constructor
@@ -32,12 +34,16 @@ namespace BeYourMarket.Web.Controllers
         ICategoryService categoryService,
         IListingService listingService,
         IContentPageService contentPageService,
-        IContentPageRoleService contentPageRoleService)
+        IContentPageRoleService contentPageRoleService,
+        ICustomFieldCategoryService customFieldCategoryService,
+        IMetaFieldService metaFieldService)
     {
       _categoryService = categoryService;
       _listingService = listingService;
       _contentPageService = contentPageService;
       _contentPageRoleService = contentPageRoleService;
+      _customFieldCategoryService = customFieldCategoryService;
+      _metaFieldService = metaFieldService;
     }
     #endregion
 
@@ -102,6 +108,7 @@ namespace BeYourMarket.Web.Controllers
     private async Task GetSearchResult(SearchListingModel model)
     {
       IEnumerable<Listing> items = null;
+      List<MetaField> metaFields = model.CustomFields;
 
       // Category
       if (model.CategoryID != 0)
@@ -112,14 +119,24 @@ namespace BeYourMarket.Web.Controllers
             .Include(x => x.ListingType)
             .Include(x => x.AspNetUser)
             .Include(x => x.ListingReviews)
+            .Include(x => x.ListingMetas)
             .SelectAsync();
 
         // Set listing types
         model.ListingTypes = CacheHelper.ListingTypes.Where(x => x.CategoryListingTypes.Any(y => y.CategoryID == model.CategoryID)).ToList();
+
+        //Custom fields which are searchable for selected category
+        var customFieldCategoryQuery = await _customFieldCategoryService.Query(x => x.CategoryID == model.CategoryID && x.MetaField.Searchable).Include(x => x.MetaField.ListingMetas).SelectAsync();
+        var customFieldCategories = customFieldCategoryQuery.ToList();
+        model.CustomFields = customFieldCategoryQuery.Select(x=>x.MetaField).OrderBy(ob=>ob.Ordering).ToList();
       }
       else
       {
         model.ListingTypes = CacheHelper.ListingTypes;
+
+        // All Custom fields which are searchable
+        var metaFieldQuery = await _metaFieldService.Query(x => x.Searchable).SelectAsync();
+        model.CustomFields = metaFieldQuery.OrderBy(ob => ob.Ordering).ToList();
       }
 
       // Set default Listing Type if it's not set or listing type is not set
@@ -163,16 +180,29 @@ namespace BeYourMarket.Web.Controllers
             .Include(x => x.Category)
             .Include(x => x.AspNetUser)
             .Include(x => x.ListingReviews)
+            .Include(x => x.ListingMetas)
             .SelectAsync();
       }
 
       // Filter items by Listing Type
-      items = items.Where(x => model.ListingTypeID.Contains(x.ListingTypeID));
+      items = items.Where(x => model.ListingTypeID.Contains(x.ListingTypeID)).ToList();
 
       // Location
       if (!string.IsNullOrEmpty(model.Location))
       {
         items = items.Where(x => !string.IsNullOrEmpty(x.Location) && x.Location.IndexOf(model.Location, StringComparison.OrdinalIgnoreCase) != -1);
+      }
+
+      // Custom fields
+      if (metaFields != null)
+      {
+        metaFields.RemoveAll(x => x.Options == null); // ignore any blank default values
+        if (metaFields.Count>0)
+        {
+          var metaFieldSelected = metaFields.Select(x => new { x.ID, x.Options }).ToList();
+          //var metaFieldTest = items.Select(i => i.ListingMetas).ToList(); //debug test....
+          items = items.Where(x => x.ListingMetas.Any(y => metaFieldSelected.Any(mf => mf.ID == y.FieldID && mf.Options.Contains(y.Value)))).ToList();
+        }
       }
 
       // Picture
@@ -204,6 +234,7 @@ namespace BeYourMarket.Web.Controllers
       model.Listings = itemsModelList;
       model.ListingsPageList = itemsModelList.ToPagedList(model.PageNumber, model.PageSize);
       model.Grid = new ListingModelGrid(model.ListingsPageList.AsQueryable());
+      ViewBag.MetaFields = metaFields;
     }
 
     IEnumerable<Category> GetParents(int categoryId)
