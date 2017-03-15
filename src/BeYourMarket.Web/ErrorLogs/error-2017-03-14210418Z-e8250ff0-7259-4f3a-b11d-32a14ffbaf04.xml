@@ -1,0 +1,168 @@
+﻿<error errorId="e8250ff0-7259-4f3a-b11d-32a14ffbaf04" host="ACERASPIREV" type="System.ArgumentNullException" message="Value cannot be null.&#xD;&#xA;Parameter name: source" source="System.Core" detail="System.ArgumentNullException: Value cannot be null.&#xD;&#xA;Parameter name: source&#xD;&#xA;   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)&#xD;&#xA;   at BeYourMarket.Web.Controllers.HomeController.&lt;&gt;c__DisplayClass12_0.&lt;GetSearchResult&gt;b__5(MetaField x) in C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Controllers\HomeController.cs:line 148&#xD;&#xA;   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()&#xD;&#xA;   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)&#xD;&#xA;   at System.Linq.OrderedEnumerable`1.&lt;GetEnumerator&gt;d__1.MoveNext()&#xD;&#xA;   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)&#xD;&#xA;   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)&#xD;&#xA;   at BeYourMarket.Web.Controllers.HomeController.&lt;GetSearchResult&gt;d__12.MoveNext() in C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Controllers\HomeController.cs:line 148&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()&#xD;&#xA;   at BeYourMarket.Web.Controllers.HomeController.&lt;Index&gt;d__7.MoveNext() in C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\Controllers\HomeController.cs:line 58&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeAsynchronousActionMethod&gt;b__36(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="admin@Ceesaro.com" time="2017-03-14T21:04:18.0380161Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=OTE9zrLUFbMOImruJKaq2wEqDMhcTLiE5Y-lnudMZAhLIjSv04p0EPsqO0zLDWif3axdb9PGiM59riZz3sSzNCGptzuofC6BzWuUvcp4bppgvc89rLgmKDB7Bevi074Ltcwx-DJAEvpUJCC9OJ5339rFYC4ildSr1ax-h-ovI60cTFUMLcOFe1fWxMTLt41N5K2V_ppwh0KrTg6442agdDE7mfVW_IoPhwYH5ne9PM-kwXgFH2IBrCIXFhyQXAi1qrjlL9vqqzAUCHllR3InnuHvSJ30lS_jMClEYLvSKcf0iv1yO_bJcvgXEcwIwyJl7pqCebIjCi6TmJ190oL39HrOchUFCPHJ5V7ZJwdAghRY4gXFZTjShEFPLZzRcIn3IYLIZMdFhnObRsNVD6alCQEcStcpAKl_Hkeh0QcmGbFyWV-2kZLSnWx9GAqawi_GWPFIP_3d9MRHsE57sZ7Ktcx5ycAXHovFSk1qfcrDEBm7LXgz4UpkpP_oXBOgBtAVf1ydekdQMvtK0CELb5t8hA&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: __RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=OTE9zrLUFbMOImruJKaq2wEqDMhcTLiE5Y-lnudMZAhLIjSv04p0EPsqO0zLDWif3axdb9PGiM59riZz3sSzNCGptzuofC6BzWuUvcp4bppgvc89rLgmKDB7Bevi074Ltcwx-DJAEvpUJCC9OJ5339rFYC4ildSr1ax-h-ovI60cTFUMLcOFe1fWxMTLt41N5K2V_ppwh0KrTg6442agdDE7mfVW_IoPhwYH5ne9PM-kwXgFH2IBrCIXFhyQXAi1qrjlL9vqqzAUCHllR3InnuHvSJ30lS_jMClEYLvSKcf0iv1yO_bJcvgXEcwIwyJl7pqCebIjCi6TmJ190oL39HrOchUFCPHJ5V7ZJwdAghRY4gXFZTjShEFPLZzRcIn3IYLIZMdFhnObRsNVD6alCQEcStcpAKl_Hkeh0QcmGbFyWV-2kZLSnWx9GAqawi_GWPFIP_3d9MRHsE57sZ7Ktcx5ycAXHovFSk1qfcrDEBm7LXgz4UpkpP_oXBOgBtAVf1ydekdQMvtK0CELb5t8hA&#xD;&#xA;Host: localhost:51583&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@Ceesaro.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="56409" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1; ASP.NET_SessionId=hltbl3lk0ut5wrc3xddhlbdr; .AspNet.ApplicationCookie=OTE9zrLUFbMOImruJKaq2wEqDMhcTLiE5Y-lnudMZAhLIjSv04p0EPsqO0zLDWif3axdb9PGiM59riZz3sSzNCGptzuofC6BzWuUvcp4bppgvc89rLgmKDB7Bevi074Ltcwx-DJAEvpUJCC9OJ5339rFYC4ildSr1ax-h-ovI60cTFUMLcOFe1fWxMTLt41N5K2V_ppwh0KrTg6442agdDE7mfVW_IoPhwYH5ne9PM-kwXgFH2IBrCIXFhyQXAi1qrjlL9vqqzAUCHllR3InnuHvSJ30lS_jMClEYLvSKcf0iv1yO_bJcvgXEcwIwyJl7pqCebIjCi6TmJ190oL39HrOchUFCPHJ5V7ZJwdAghRY4gXFZTjShEFPLZzRcIn3IYLIZMdFhnObRsNVD6alCQEcStcpAKl_Hkeh0QcmGbFyWV-2kZLSnWx9GAqawi_GWPFIP_3d9MRHsE57sZ7Ktcx5ycAXHovFSk1qfcrDEBm7LXgz4UpkpP_oXBOgBtAVf1ydekdQMvtK0CELb5t8hA" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="hwwJIEuTuFyYsjteMW5MfFa69iLiCVZVCvUL_m3OREckVFUgBMZSjJH_hRQX-bL_BD_-fNnkthyr59-ZtPtvd9lpxSaUksSt9ys3eyfFb3k1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="hltbl3lk0ut5wrc3xddhlbdr" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="OTE9zrLUFbMOImruJKaq2wEqDMhcTLiE5Y-lnudMZAhLIjSv04p0EPsqO0zLDWif3axdb9PGiM59riZz3sSzNCGptzuofC6BzWuUvcp4bppgvc89rLgmKDB7Bevi074Ltcwx-DJAEvpUJCC9OJ5339rFYC4ildSr1ax-h-ovI60cTFUMLcOFe1fWxMTLt41N5K2V_ppwh0KrTg6442agdDE7mfVW_IoPhwYH5ne9PM-kwXgFH2IBrCIXFhyQXAi1qrjlL9vqqzAUCHllR3InnuHvSJ30lS_jMClEYLvSKcf0iv1yO_bJcvgXEcwIwyJl7pqCebIjCi6TmJ190oL39HrOchUFCPHJ5V7ZJwdAghRY4gXFZTjShEFPLZzRcIn3IYLIZMdFhnObRsNVD6alCQEcStcpAKl_Hkeh0QcmGbFyWV-2kZLSnWx9GAqawi_GWPFIP_3d9MRHsE57sZ7Ktcx5ycAXHovFSk1qfcrDEBm7LXgz4UpkpP_oXBOgBtAVf1ydekdQMvtK0CELb5t8hA" />
+    </item>
+  </cookies>
+</error>

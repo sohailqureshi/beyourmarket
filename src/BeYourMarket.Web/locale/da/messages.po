@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-03-14 16:48+00:00\n"
-"PO-Revision-Date: 2017-03-14 16:48+00:00\n"
+"POT-Creation-Date: 2017-03-15 09:45+00:00\n"
+"PO-Revision-Date: 2017-03-15 09:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,7 +84,7 @@ msgstr "Admin"
 msgid "Admin Panel"
 msgstr "Admin panel"
 
-#: Areas\Admin\Views\Install\Index.cshtml:28
+#: Areas\Admin\Views\Install\Index.cshtml:47
 msgid "Admin user email"
 msgstr "Administrator email"
 
@@ -156,6 +156,10 @@ msgstr "Udvikler"
 #: Views\Shared\Error.cshtml:47
 msgid "Back to the Home"
 msgstr "Tilbage til forsiden"
+
+#: Areas\Admin\Views\Install\Index.cshtml:33
+msgid "Base Currency"
+msgstr ""
 
 #: Areas\Admin\Views\Manage\EmailTemplateUpdate.cshtml:55
 msgid "Body"
@@ -382,7 +386,7 @@ msgstr "Opret"
 msgid "Create an account"
 msgstr "Opret konto"
 
-#: Areas\Admin\Views\Install\Index.cshtml:39
+#: Areas\Admin\Views\Install\Index.cshtml:58
 msgid "Create Sample Data"
 msgstr "Opret testdata"
 
@@ -401,6 +405,7 @@ msgstr "Oprettet"
 msgid "CSS Code Editor"
 msgstr "CSS kode editor"
 
+#: Views\Manage\UserProfile.cshtml:63
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:87
 #: Areas\Admin\Views\Manage\Settings.cshtml:63
 msgid "Currency"
@@ -437,23 +442,23 @@ msgstr "Brugerdefineret Javascript"
 msgid "Dashboard"
 msgstr "Kontrolpanel"
 
-#: Areas\Admin\Views\Install\Index.cshtml:63
+#: Areas\Admin\Views\Install\Index.cshtml:82
 msgid "Database"
 msgstr "Databasenavn"
 
-#: Areas\Admin\Views\Install\Index.cshtml:44
+#: Areas\Admin\Views\Install\Index.cshtml:63
 msgid "Database information"
 msgstr "Databaseinformation"
 
-#: Areas\Admin\Views\Install\Index.cshtml:47
+#: Areas\Admin\Views\Install\Index.cshtml:66
 msgid "Database type"
 msgstr "Databasetype"
 
-#: Areas\Admin\Views\Install\Index.cshtml:83
+#: Areas\Admin\Views\Install\Index.cshtml:102
 msgid "database-password"
 msgstr "Adgangskode til database"
 
-#: Areas\Admin\Views\Install\Index.cshtml:78
+#: Areas\Admin\Views\Install\Index.cshtml:97
 msgid "database-username"
 msgstr "Brugernavn til database"
 
@@ -626,7 +631,7 @@ msgid "Enabled"
 msgstr "Aktivéret"
 
 #: Views\Account\Register.cshtml:47
-#: Areas\Admin\Views\Install\Index.cshtml:29
+#: Areas\Admin\Views\Install\Index.cshtml:48
 msgid "Enter email"
 msgstr "Indtast email"
 
@@ -702,7 +707,7 @@ msgstr "Eksterne login"
 msgid "Failed"
 msgstr "Mislykkedes"
 
-#: Controllers\ManageController.cs:271
+#: Controllers\ManageController.cs:272
 msgid "Failed to verify phone"
 msgstr ""
 
@@ -717,7 +722,7 @@ msgstr "Fejl"
 msgid "Favicon"
 msgstr "Favicon"
 
-#: Views\Manage\UserProfile.cshtml:69
+#: Views\Manage\UserProfile.cshtml:76
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:50
 msgid "Female"
 msgstr "Kvinde"
@@ -813,7 +818,7 @@ msgstr "Vært"
 msgid "I accept the"
 msgstr "Jeg accepterer"
 
-#: Areas\Admin\Views\Install\Index.cshtml:89
+#: Areas\Admin\Views\Install\Index.cshtml:108
 #: Areas\Admin\Views\Plugin\Plugins.cshtml:21
 msgid "Install"
 msgstr "Installér"
@@ -834,7 +839,7 @@ msgstr "Installation af - BeYourMarket - Peer to Peer Markedsplads"
 msgid "Installed"
 msgstr "Installeret"
 
-#: Areas\Admin\Views\Install\Index.cshtml:112
+#: Areas\Admin\Views\Install\Index.cshtml:131
 msgid "Installing..."
 msgstr "Installerer..."
 
@@ -1001,7 +1006,7 @@ msgstr "Log ud"
 
 #: Views\Account\Login.cshtml:5
 #: Views\Account\Register.cshtml:69
-#: Areas\Admin\Views\Install\Index.cshtml:77
+#: Areas\Admin\Views\Install\Index.cshtml:96
 msgid "Login"
 msgstr "Login"
 
@@ -1021,7 +1026,7 @@ msgstr "Log ind på din konto"
 msgid "Logo"
 msgstr "Logo"
 
-#: Views\Manage\UserProfile.cshtml:66
+#: Views\Manage\UserProfile.cshtml:73
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:47
 msgid "Male"
 msgstr "Mand"
@@ -1055,6 +1060,10 @@ msgstr ""
 msgid "Mark as read"
 msgstr ""
 
+#: Areas\Admin\Views\Install\Index.cshtml:25
+msgid "Market Place information"
+msgstr ""
+
 #: Areas\Admin\Views\Manage\Settings.cshtml:137
 msgid "Max. Review per day"
 msgstr ""
@@ -1064,7 +1073,7 @@ msgstr ""
 msgid "Message"
 msgstr "Besked"
 
-#: Controllers\ManageController.cs:531
+#: Controllers\ManageController.cs:532
 msgid "Message is sent."
 msgstr ""
 
@@ -1222,9 +1231,9 @@ msgstr ""
 #: Views\Listing\ListingUpdate.cshtml:119
 #: Views\Listing\ListingUpdate.cshtml:120
 #: Views\Manage\Index.cshtml:13
-#: Areas\Admin\Views\Install\Index.cshtml:32
-#: Areas\Admin\Views\Install\Index.cshtml:33
-#: Areas\Admin\Views\Install\Index.cshtml:82
+#: Areas\Admin\Views\Install\Index.cshtml:51
+#: Areas\Admin\Views\Install\Index.cshtml:52
+#: Areas\Admin\Views\Install\Index.cshtml:101
 msgid "Password"
 msgstr "Adgangskode"
 
@@ -1365,7 +1374,7 @@ msgstr "Prisenhed"
 msgid "Profile"
 msgstr "Profil"
 
-#: Views\Manage\UserProfile.cshtml:74
+#: Views\Manage\UserProfile.cshtml:81
 msgid "Profile Picture"
 msgstr "Profilbillede"
 
@@ -1477,7 +1486,7 @@ msgstr ""
 msgid "Roles With Access"
 msgstr ""
 
-#: Views\Manage\UserProfile.cshtml:81
+#: Views\Manage\UserProfile.cshtml:88
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:98
 #: Areas\Admin\Views\Design\Appearance.cshtml:44
 #: Areas\Admin\Views\Design\CodeScript.cshtml:34
@@ -1539,7 +1548,7 @@ msgstr "Se alle annoncer"
 msgid "See all messages"
 msgstr ""
 
-#: Views\Shared\_SearchCustomFields.cshtml:29
+#: Views\Shared\_SearchCustomFields.cshtml:32
 msgid "Select All"
 msgstr ""
 
@@ -1567,7 +1576,7 @@ msgstr ""
 msgid "Send Review"
 msgstr ""
 
-#: Areas\Admin\Views\Install\Index.cshtml:58
+#: Areas\Admin\Views\Install\Index.cshtml:77
 msgid "Server domain/IP"
 msgstr "Server domæne/IP"
 
@@ -1837,6 +1846,10 @@ msgstr "For at opsætte betaling skal du konfigurere et betalingsplugin."
 msgid "To Date"
 msgstr "Til dato"
 
+#: Areas\Admin\Views\Install\Index.cshtml:28
+msgid "Trading Name"
+msgstr ""
+
 #: Areas\Admin\Views\Payment\PaymentSetting.cshtml:30
 msgid "Transaction fee (%)"
 msgstr "Transaktionsgebyr (%)"
@@ -1890,7 +1903,7 @@ msgstr "Upload billeder"
 msgid "Use another service to log in."
 msgstr "Brug en anden service til at logge ind."
 
-#: Areas\Admin\Views\Install\Index.cshtml:71
+#: Areas\Admin\Views\Install\Index.cshtml:90
 msgid "Use integrated authentication"
 msgstr "Brug integreret autentifikation"
 
@@ -1912,7 +1925,7 @@ msgstr ""
 msgid "User Has Roles"
 msgstr ""
 
-#: Areas\Admin\Views\Install\Index.cshtml:25
+#: Areas\Admin\Views\Install\Index.cshtml:44
 msgid "User information"
 msgstr "Brugerinformation"
 

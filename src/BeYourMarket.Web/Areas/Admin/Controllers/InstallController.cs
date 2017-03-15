@@ -20,6 +20,7 @@ using BeYourMarket.Core.Plugins;
 using i18n;
 using i18n.Helpers;
 using BeYourMarket.Web.Controllers;
+using BeYourMarket.Core.Helpers;
 
 namespace BeYourMarket.Web.Areas.Admin.Controllers
 {
@@ -41,6 +42,7 @@ namespace BeYourMarket.Web.Areas.Admin.Controllers
     // GET: Admin/Install
     public ActionResult Index()
     {
+      ViewBag.Currencies = CurrencyHelper.Currencies.OrderBy(ob => ob.Key);
       return View();
     }
 

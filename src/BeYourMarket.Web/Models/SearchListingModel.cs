@@ -38,6 +38,6 @@ namespace BeYourMarket.Web.Models
 
         public ListingModelGrid Grid { get; set; }
 
-        public List<MetaField> CustomFields { get; set; }
+        public List<MetaFieldSearchModel> CustomFields { get; set; }
   }
 }

@@ -307,6 +307,7 @@
     <Compile Include="Models\LanguageSelectorModel.cs" />
     <Compile Include="Models\ListingTypeModel.cs" />
     <Compile Include="Models\MetaFieldModel.cs" />
+    <Compile Include="Models\MetaFieldSearchModel.cs" />
     <Compile Include="Models\NavigationSideModel.cs" />
     <Compile Include="Models\Grids\OrdersGrid.cs" />
     <Compile Include="Models\Grids\ListingsGrid.cs" />

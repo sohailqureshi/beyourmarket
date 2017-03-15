@@ -14,10 +14,13 @@
     string controlName = Model.CustomFields[i].Name;
     string controlPlaceHolder = Model.CustomFields[i].Placeholder;
 
+    var selectedValue = string.Empty;
+    if (Model.CustomFields[i].Selected != null)
+    {     
+      selectedValue = Model.CustomFields[i].Selected;
+    }
+
     @Html.HiddenFor(model => Model.CustomFields[i].ID)
-    @Html.HiddenFor(model => Model.CustomFields[i].Name)
-    @Html.HiddenFor(model => Model.CustomFields[i].Placeholder)
-    @Html.HiddenFor(model => Model.CustomFields[i].ControlTypeID)
     switch (controlType)
     {
       case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.None:
@@ -29,7 +32,8 @@
            <option value="">[[[Select All]]]</option>
             @foreach (var option in options)
             {
-              <option value="@option">@option</option>
+              var selected = (selectedValue.Equals(option)) ? "selected" : "";
+              <option value="@option" @selected >@option</option>
             }
           </select>
         </div>
@@ -40,6 +44,7 @@
           <div>
               @foreach (var option in options)
               {
+                var selected = (selectedValue.Equals(option)) ? "checked" : "";
                 <input type="radio" id="@controlOptions" name="@controlOptions" value="@option" />
                 <label for="@controlOptions">@option</label>
               }
@@ -51,6 +56,7 @@
             <label>@controlName</label>
               @foreach (var option in options)
               {
+                var selected = (selectedValue.Equals(option)) ? "checked" : "";
                 <input type="checkbox" id="@controlOptions" name="@controlOptions" value="@option" />
                 <label for="@controlOptions">@option</label>
               }
@@ -59,13 +65,13 @@
       case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.TextBox:
           <div class="form-group">
             <label>@controlName</label>
-            <input type="text" id="@controlOptions" name="@controlOptions" class="form-control input-lg" placeholder="@controlPlaceHolder">
+            <input type="text" id="@controlOptions" name="@controlOptions" class="form-control input-lg" placeholder="@controlPlaceHolder" value="@selectedValue">
           </div>
         break;
       case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.MultilineTextbox:
           <div class="form-group">
             <label>@controlName</label>
-            <textarea class="form-control input-lg" rows="4" placeholder="@controlPlaceHolder" id="@controlOptions" name="@controlOptions" ></textarea>
+            <textarea class="form-control input-lg" rows="4" placeholder="@controlPlaceHolder" id="@controlOptions" name="@controlOptions">@selectedValue</textarea>
           </div>
         break;
       case BeYourMarket.Model.Enum.Enum_MetaFieldControlType.Datepicker:
