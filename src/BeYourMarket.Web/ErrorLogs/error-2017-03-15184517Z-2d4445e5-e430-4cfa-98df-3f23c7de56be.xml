@@ -1,0 +1,168 @@
+﻿<error errorId="2d4445e5-e430-4cfa-98df-3f23c7de56be" host="ACERASPIREV" type="System.NullReferenceException" message="Object reference not set to an instance of an object." source="Microsoft.Owin.Security.Cookies" detail="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider.Exception(CookieExceptionContext context)&#xD;&#xA;   at Microsoft.Owin.Security.Cookies.CookieAuthenticationHandler.&lt;AuthenticateCoreAsync&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Security.Infrastructure.AuthenticationHandler.&lt;BaseInitializeAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Security.Infrastructure.AuthenticationMiddleware`1.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.AspNet.Identity.Owin.IdentityFactoryMiddleware`2.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.AspNet.Identity.Owin.IdentityFactoryMiddleware`2.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.AspNet.Identity.Owin.IdentityFactoryMiddleware`2.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.AspNet.Identity.Owin.IdentityFactoryMiddleware`2.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.&lt;RunApp&gt;d__5.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.&lt;DoFinalWork&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar)&#xD;&#xA;   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2017-03-15T18:45:17.1266072Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:i18n.langtag=en; .AspNet.ApplicationCookie=VKACjiD52BdYgJhInASt68JObY2cPahc9zm4XR3oXvy9-shH9nUUUcVKvHmHb53TqNACXVJHTqNsyxxKn0ffQo-Nl6eS6Y2Uw40gAvO44JnKVznTh9TcPviEN591trmSb88Pw3x0AWvGt2GAxAdS80mZPx8sj5BQTqSQwoo_3yH-oiD5vbu99bLlBStcWol4nZlo4hbjyvs-XF5osoTlDFAmAcqT2eBMJVL3Rw8L808XtfFQYZNHWJ_i5c5EPtJIEj2GMVja_53P6fSwQqfiAVPvHUGSt_ccqSroOQJQ6fr3n0dPFbNPvDftMmAiGGNnesYk-5tI3cKW5NFxPkDRdH3JoMmpKfxRaJfsaaSpzIrDXB_tX3d9Ty-EWTPQmVPCvv-eGJGI4UXqKIKE0WebbZqAKeHaLWa6vaP6ZUDzIOYr2yD1XLfZ9AmhM1vKo_wnEIcye1W-NF6LnCbQ5eSJ6B-uu2b8AwpCvdwjjK0wtxq1OyGFwkNEXhO2HRO4icUGCfBFY4JbnzzFfXoda1_ddg; __RequestVerificationToken=Oc2VkY_7HSKt-mYLi2V7qQvUURJEMffMQzD59jFaMxP0ZaVvAb7b77FdcRnkoSXun2Ku-E4fPCFdp1iqMmKBl0JIk7LEWYX050DaAnRDjCA1&#xD;&#xA;HTTP_HOST:localhost:51583&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch, br&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: i18n.langtag=en; .AspNet.ApplicationCookie=VKACjiD52BdYgJhInASt68JObY2cPahc9zm4XR3oXvy9-shH9nUUUcVKvHmHb53TqNACXVJHTqNsyxxKn0ffQo-Nl6eS6Y2Uw40gAvO44JnKVznTh9TcPviEN591trmSb88Pw3x0AWvGt2GAxAdS80mZPx8sj5BQTqSQwoo_3yH-oiD5vbu99bLlBStcWol4nZlo4hbjyvs-XF5osoTlDFAmAcqT2eBMJVL3Rw8L808XtfFQYZNHWJ_i5c5EPtJIEj2GMVja_53P6fSwQqfiAVPvHUGSt_ccqSroOQJQ6fr3n0dPFbNPvDftMmAiGGNnesYk-5tI3cKW5NFxPkDRdH3JoMmpKfxRaJfsaaSpzIrDXB_tX3d9Ty-EWTPQmVPCvv-eGJGI4UXqKIKE0WebbZqAKeHaLWa6vaP6ZUDzIOYr2yD1XLfZ9AmhM1vKo_wnEIcye1W-NF6LnCbQ5eSJ6B-uu2b8AwpCvdwjjK0wtxq1OyGFwkNEXhO2HRO4icUGCfBFY4JbnzzFfXoda1_ddg; __RequestVerificationToken=Oc2VkY_7HSKt-mYLi2V7qQvUURJEMffMQzD59jFaMxP0ZaVvAb7b77FdcRnkoSXun2Ku-E4fPCFdp1iqMmKBl0JIk7LEWYX050DaAnRDjCA1&#xD;&#xA;Host: localhost:51583&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Web\" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="55342" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="51583" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="i18n.langtag=en; .AspNet.ApplicationCookie=VKACjiD52BdYgJhInASt68JObY2cPahc9zm4XR3oXvy9-shH9nUUUcVKvHmHb53TqNACXVJHTqNsyxxKn0ffQo-Nl6eS6Y2Uw40gAvO44JnKVznTh9TcPviEN591trmSb88Pw3x0AWvGt2GAxAdS80mZPx8sj5BQTqSQwoo_3yH-oiD5vbu99bLlBStcWol4nZlo4hbjyvs-XF5osoTlDFAmAcqT2eBMJVL3Rw8L808XtfFQYZNHWJ_i5c5EPtJIEj2GMVja_53P6fSwQqfiAVPvHUGSt_ccqSroOQJQ6fr3n0dPFbNPvDftMmAiGGNnesYk-5tI3cKW5NFxPkDRdH3JoMmpKfxRaJfsaaSpzIrDXB_tX3d9Ty-EWTPQmVPCvv-eGJGI4UXqKIKE0WebbZqAKeHaLWa6vaP6ZUDzIOYr2yD1XLfZ9AmhM1vKo_wnEIcye1W-NF6LnCbQ5eSJ6B-uu2b8AwpCvdwjjK0wtxq1OyGFwkNEXhO2HRO4icUGCfBFY4JbnzzFfXoda1_ddg; __RequestVerificationToken=Oc2VkY_7HSKt-mYLi2V7qQvUURJEMffMQzD59jFaMxP0ZaVvAb7b77FdcRnkoSXun2Ku-E4fPCFdp1iqMmKBl0JIk7LEWYX050DaAnRDjCA1" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:51583" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="i18n.langtag">
+      <value string="en" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="VKACjiD52BdYgJhInASt68JObY2cPahc9zm4XR3oXvy9-shH9nUUUcVKvHmHb53TqNACXVJHTqNsyxxKn0ffQo-Nl6eS6Y2Uw40gAvO44JnKVznTh9TcPviEN591trmSb88Pw3x0AWvGt2GAxAdS80mZPx8sj5BQTqSQwoo_3yH-oiD5vbu99bLlBStcWol4nZlo4hbjyvs-XF5osoTlDFAmAcqT2eBMJVL3Rw8L808XtfFQYZNHWJ_i5c5EPtJIEj2GMVja_53P6fSwQqfiAVPvHUGSt_ccqSroOQJQ6fr3n0dPFbNPvDftMmAiGGNnesYk-5tI3cKW5NFxPkDRdH3JoMmpKfxRaJfsaaSpzIrDXB_tX3d9Ty-EWTPQmVPCvv-eGJGI4UXqKIKE0WebbZqAKeHaLWa6vaP6ZUDzIOYr2yD1XLfZ9AmhM1vKo_wnEIcye1W-NF6LnCbQ5eSJ6B-uu2b8AwpCvdwjjK0wtxq1OyGFwkNEXhO2HRO4icUGCfBFY4JbnzzFfXoda1_ddg" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="Oc2VkY_7HSKt-mYLi2V7qQvUURJEMffMQzD59jFaMxP0ZaVvAb7b77FdcRnkoSXun2Ku-E4fPCFdp1iqMmKBl0JIk7LEWYX050DaAnRDjCA1" />
+    </item>
+  </cookies>
+</error>

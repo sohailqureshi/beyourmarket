@@ -83,6 +83,7 @@
     <Compile Include="Models\ListingPicture.cs" />
     <Compile Include="Models\ListingReview.cs" />
     <Compile Include="Models\ListingStat.cs" />
+    <Compile Include="Models\ListingFeature..cs" />
     <Compile Include="Models\ListingType.cs" />
     <Compile Include="Models\Mapping\AspNetRoleMap.cs" />
     <Compile Include="Models\Mapping\AspNetUserClaimMap.cs" />
@@ -94,6 +95,8 @@
     <Compile Include="Models\Mapping\ContentPageRoleMap.cs" />
     <Compile Include="Models\Mapping\ContentPageMap.cs" />
     <Compile Include="Models\Mapping\EmailTemplateMap.cs" />
+    <Compile Include="Models\Mapping\FeatureMap.cs" />
+    <Compile Include="Models\Mapping\ListingFeatureMap.cs" />
     <Compile Include="Models\Mapping\ListingMap.cs" />
     <Compile Include="Models\Mapping\ListingMetaMap.cs" />
     <Compile Include="Models\Mapping\ListingPictureMap.cs" />
@@ -122,6 +125,7 @@
     <Compile Include="Models\Picture.cs" />
     <Compile Include="Models\Setting.cs" />
     <Compile Include="Models\SettingDictionary.cs" />
+    <Compile Include="Models\Feature.cs" />
     <Compile Include="Models\StripeConnect.cs" />
     <Compile Include="Models\StripeTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

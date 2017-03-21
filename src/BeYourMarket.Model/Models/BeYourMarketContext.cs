@@ -38,10 +38,12 @@ namespace BeYourMarket.Model.Models
     public DbSet<ContentPage> ContentPages { get; set; }
     public DbSet<ContentPageRole> ContentPageRoles { get; set; }
     public DbSet<EmailTemplate> EmailTemplates { get; set; }
+    public DbSet<Feature> Features { get; set; }
     public DbSet<ListingMeta> ListingMetas { get; set; }
     public DbSet<ListingPicture> ListingPictures { get; set; }
     public DbSet<ListingReview> ListingReviews { get; set; }
     public DbSet<Listing> Listings { get; set; }
+    public DbSet<ListingFeature> ListingFeatures { get; set; }
     public DbSet<ListingStat> ListingStats { get; set; }
     public DbSet<ListingType> ListingTypes { get; set; }
     public DbSet<Message> Messages { get; set; }
@@ -69,6 +71,7 @@ namespace BeYourMarket.Model.Models
       modelBuilder.Configurations.Add(new CategoryStatMap());
       modelBuilder.Configurations.Add(new ContentPageMap());
       modelBuilder.Configurations.Add(new ContentPageRoleMap());
+      modelBuilder.Configurations.Add(new FeatureMap());
       modelBuilder.Configurations.Add(new EmailTemplateMap());
       modelBuilder.Configurations.Add(new ListingMetaMap());
       modelBuilder.Configurations.Add(new ListingPictureMap());

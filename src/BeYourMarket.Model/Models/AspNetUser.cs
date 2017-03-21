@@ -18,6 +18,7 @@ namespace BeYourMarket.Model.Models
       this.ListingReviewsUserFrom = new List<ListingReview>();
       this.ListingReviewsUserTo = new List<ListingReview>();
       this.AspNetRoles = new List<AspNetRole>();
+      this.Features = new List<Feature>();
     }
 
     public string Id { get; set; }
@@ -56,5 +57,6 @@ namespace BeYourMarket.Model.Models
     public virtual ICollection<ListingReview> ListingReviewsUserFrom { get; set; }
     public virtual ICollection<ListingReview> ListingReviewsUserTo { get; set; }
     public virtual ICollection<AspNetRole> AspNetRoles { get; set; }
+    public virtual ICollection<Feature> Features { get; set; }
   }
 }

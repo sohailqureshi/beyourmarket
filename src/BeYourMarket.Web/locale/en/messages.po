@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-03-15 09:45+00:00\n"
-"PO-Revision-Date: 2017-03-15 09:45+00:00\n"
+"POT-Creation-Date: 2017-03-21 19:39+00:00\n"
+"PO-Revision-Date: 2017-03-21 19:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1121,6 +1121,10 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+#: C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Model\Enum\EnumList.cs:134
+msgid "Network"
+msgstr ""
+
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:90
 msgid "New listings"
 msgstr ""
@@ -1290,6 +1294,10 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:33
 msgid "Pickup Directory"
+msgstr ""
+
+#: C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Model\Enum\EnumList.cs:146
+msgid "Pickup Directory From IIS"
 msgstr ""
 
 #: Views\Listing\_ListingGridList.cshtml:32
@@ -1645,6 +1653,10 @@ msgstr ""
 
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:64
 msgid "SMTP User"
+msgstr ""
+
+#: C:\inetpub\wwwroot\beyourmarket\src\BeYourMarket.Model\Enum\EnumList.cs:140
+msgid "Specified Pickup Directory"
 msgstr ""
 
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:78

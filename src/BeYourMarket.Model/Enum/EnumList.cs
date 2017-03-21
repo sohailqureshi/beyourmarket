@@ -131,19 +131,19 @@ namespace BeYourMarket.Model.Enum
     //
     // Summary:
     //     Email is sent through the network to an SMTP server.
-    [Display(Name = "Network")]
+    [Display(Name = "[[[Network]]]")]
     Network = 0,
     //
     // Summary:
     //     Email is copied to the directory specified by the System.Net.Mail.SmtpClient.PickupDirectoryLocation
     //     property for delivery by an external application.
-    [Display(Name = "Specified Pickup Directory")]
+    [Display(Name = "[[[Specified Pickup Directory]]]")]
     SpecifiedPickupDirectory = 1,
     //
     // Summary:
     //     Email is copied to the pickup directory used by a local Internet Information
     //     Services (IIS) for delivery.
-    [Display(Name = "Pickup Directory From IIS")]
+    [Display(Name = "[[[Pickup Directory From IIS]]]")]
     PickupDirectoryFromIis = 2
   }
 }

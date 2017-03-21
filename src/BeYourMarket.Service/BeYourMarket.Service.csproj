@@ -73,8 +73,10 @@
     <Compile Include="CustomFieldCategoryService.cs" />
     <Compile Include="CustomFieldListingService.cs" />
     <Compile Include="DataCacheService.cs" />
+    <Compile Include="ListingFeatureService.cs" />
     <Compile Include="Helpers\MessageHelper.cs" />
     <Compile Include="Helpers\CacheHelper.cs" />
+    <Compile Include="FeatureService.cs" />
     <Compile Include="ListingPictureService.cs" />
     <Compile Include="CustomFieldService.cs" />
     <Compile Include="ContentPageService.cs" />
